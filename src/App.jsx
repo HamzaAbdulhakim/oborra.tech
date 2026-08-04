@@ -3,7 +3,7 @@ import Qualifications from "./pages/Qualifications";
 import fadeUp from "./data/fadeUp";
 import Reveal from "./components/Reveal";
 import { slideLeft, slideRight } from "./animations/variants";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Contact from "./pages/contact";
 import About from "./pages/About";
 import CallMe from "./pages/CallMe";
