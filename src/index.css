@@ -1,0 +1,49 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+ .dark-theme {
+    background-color: #0f172a;
+    color: white;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+ .light-theme {
+    background-color: white;
+    color: #111827;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section[id]{
+    margin-top: var(--space-lg);
+
+    padding-bottom: var(--space-lg);
+}

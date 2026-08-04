@@ -1,0 +1,55 @@
+.qualifications{
+margin: var(--space-9);
+padding:
+
+var(--space-4);
+
+gap:
+
+var(--space-3);
+}
+.qualifications-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(440px,1fr));
+
+gap:30px;
+
+margin-top:var(--space-4);
+
+align-items:start;
+
+}
+
+.card{
+
+background: transparent;
+
+color:  gold;
+
+
+
+border:1px solid blue;
+
+backdrop-filter:blur(15px);
+
+
+border-radius:20px;
+
+margin-bottom: var(--space-5);
+padding:30px;
+
+transition:.35s;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+

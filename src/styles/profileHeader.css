@@ -1,0 +1,77 @@
+.hero-section {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+
+  padding: var(--space-md);
+
+  gap: var(--space-xs);
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image-wrapper {
+  position: relative;
+}
+
+.profile-image {
+  width: clamp(160px, 25vw, 220px);
+  aspect-ratio: 1;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  transition: 0.4s;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: 8px;
+  right: -15px;
+
+  background: var(--color-bg);
+
+  color: var(--text-color);
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  font-size: 0.85rem;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.profile-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: clamp(10%, 500%, 100%);
+}
+
+.profile-subtitle {
+  max-width: 650px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-size: var(--fs-lg);
+}
+
+.profile-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}

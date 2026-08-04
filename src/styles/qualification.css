@@ -1,0 +1,33 @@
+.qualifications-container {
+  background: var(--text);
+
+  color: var(--background);
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  margin-top: var(--space-lg);
+
+  border: var(--surface-border);
+}
+
+.card {
+  background: var(--text);
+
+  color: var(--background);
+
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
+
+  padding: var(--space-md);
+
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
