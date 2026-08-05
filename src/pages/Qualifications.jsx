@@ -1,5 +1,5 @@
 import SectionTitle from "../components/SectionTitle";
-import Skills from "../sections/skills";
+import Skills from "../sections/Skills";
 import Education from "../sections/Education";
 import Experience from "../sections/Experience";
 import '../styles/blog.css'
