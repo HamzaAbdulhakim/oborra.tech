@@ -49,6 +49,8 @@
     align-self:flex-end;
 
     right: min(992px, 25%);
+
+    right: clamp(50%, 25%, 992px);
 }
 
 
