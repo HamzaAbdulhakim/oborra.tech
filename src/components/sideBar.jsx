@@ -1,4 +1,4 @@
-import "../styles/sidebar.css";
+import "../styles/sideBar.css";
 import { FaTimes } from "react-icons/fa";
 import navigation from "../data/navigation";
 function Sidebar({ isOpen, setIsOpen, activeSection }) {
