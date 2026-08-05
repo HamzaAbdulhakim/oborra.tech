@@ -3,7 +3,7 @@ import Qualifications from "./pages/Qualifications";
 import fadeUp from "./data/fadeUp";
 import Reveal from "./components/Reveal";
 import { slideLeft, slideRight } from "./animations/variants";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"
 import Contact from "./pages/contact";
 import About from "./pages/About";
 import CallMe from "./pages/CallMe";
@@ -11,7 +11,6 @@ import Header from "./pages/Header";
 import Projects from "./pages/Projects";
 import Stagger from "./components/Stagger";
 import Reveal2 from "./components/Reveal2";
-//import Statistics1 from "./components/Statistics1";
 
 import NavBar from "./components/navBar";
 function App() {
