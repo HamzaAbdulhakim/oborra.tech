@@ -42,6 +42,8 @@
 
   color: inherit;
 
+  border: 1px solid var(--primary-color);
+
   font-size:var(--fs-md);
   
   transition: var(--transition-normal);

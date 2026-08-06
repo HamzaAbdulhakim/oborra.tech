@@ -29,9 +29,7 @@ subtitle="Get to know me better"
 />
 <Reveal >
 <div className="about-container">
-
 <div className="about-image">
-
 <img
 
 src={profile}

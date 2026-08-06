@@ -28,6 +28,8 @@
 
 .sidebar a {
   font-size: 20px;
+  background: var(--text-color);
+  color: var(--background-color);
 }
 
 .close-btn {
@@ -46,6 +48,12 @@
 }
 
 .sidebar.open {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  backdrop-filter: blur(8px);
   transform: translateY(0);
   visibility: visible;
 

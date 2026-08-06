@@ -52,14 +52,14 @@
 }
 
 .profile-name {
-  font-size: 2rem;
+  font-size: var(--space-2xl);
   font-weight: 700;
 }
 
 .profile-title {
   color: var(--primary-color);
   font-weight: 600;
-  font-size: clamp(10%, 500%, 100%);
+  font-size: var(--space-xl);
 }
 
 .profile-subtitle {
@@ -74,4 +74,18 @@
   align-items: center;
   gap: 8px;
   font-size: 0.95rem;
+}
+
+@media(max-width: 786px){
+  .profile-name{
+    font-size: large;
+  }
+
+  .profile-title{
+    font-size: medium;
+  }
+
+  .profile-subtitle{
+    font-size: small;
+  }
 }

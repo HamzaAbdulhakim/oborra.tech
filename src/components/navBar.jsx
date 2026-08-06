@@ -3,7 +3,7 @@ import navigation from "../data/navigation";
 import "../styles/navbar.css"
 import Button from "./Button";
 import {FaBars} from "react-icons/fa"
-import { FaMoon, FaSun} from "react-icons/fa";
+import { FiMoon, FiSun} from "react-icons/fi";
 import Sidebar from "./sideBar";
 function Navbar({ isLightMode, setIsLightMode }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -80,7 +80,7 @@ useEffect(() => {
      aria-label="Toggle light and dark theme"
     onClick={() => setIsLightMode(!isLightMode)}
   >
-    {isLightMode ? <FaMoon />: <FaSun />}
+    {isLightMode ? <FiMoon />: <FiSun />}
   </button>
 
   <button 
