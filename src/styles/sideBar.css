@@ -1,77 +1,71 @@
+.sidebar {
+  position: fixed;
 
+  top: 0;
 
-.sidebar{
-    position:fixed;
+  right: 0;
 
-    top:0;
+  visibility: hidden;
 
-    right: 0;
+  height: 100vh;
 
-    height:100vh;
+  background: var(--background-color);
 
-    background: var(--background-color);
+  color: var(--text-color);
 
-    color: var(--text-color);
+  display: flex;
 
-    display: flex;
+  flex-direction: column;
+  gap: 30px;
 
-    flex-direction: column;
-    gap:30px;
-
-    padding:40px;
-
-   width:min(350px,85%);
-   transform:translateX(100%);
-   pointer-events:none;
-   transition:transform .35s ease;
-   z-index:1100;
-}
-    
-
-.sidebar a{
-    font-size:20px;
+  padding: 40px;
+  width: 240px;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: transform 0.35s ease;
+  z-index: 1100;
 }
 
-
-
-.close-btn{
-
-    background:none;
-
-    border:none;
-
-    color:white;
-
-    font-size:24px;
-
-    cursor:pointer;
-
-    align-self:flex-end;
-
-    right: min(992px, 25%);
-
-    right: clamp(50%, 25%, 992px);
+.sidebar a {
+  font-size: 20px;
 }
 
+.close-btn {
+  background: none;
 
-.sidebar.open{
+  border: none;
 
-    transform:translateY(0);
-    visibility: visible;
+  color: white;
 
-    pointer-events:auto;
+  font-size: 24px;
+
+  cursor: pointer;
+
+  align-self: flex-end;
+
 }
 
-.overlay{
+.sidebar.open {
+  transform: translateY(0);
+  visibility: visible;
 
-    position:fixed;
+  pointer-events: auto;
+}
 
-    inset:0;
+.overlay {
+  position: fixed;
 
-    background:rgba(0,0,0,.45);
+  inset: 0;
 
-    backdrop-filter:blur(4px);
+  background: rgba(0, 0, 0, 0.45);
 
-    z-index:1050;
+  backdrop-filter: blur(4px);
 
+  z-index: 1050;
+}
+
+@media(max-width:400px){
+    .sidebar.open{
+        right: 10%;
+    }
 }

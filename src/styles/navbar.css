@@ -1,5 +1,5 @@
 .nav {
-  width: 100%;
+  width: min(1200px, 65%);
   display: flex;
 
   justify-content: space-between;
@@ -154,7 +154,7 @@ button.menu-btn {
     position: fixed;
     padding: 0 1rem;
     gap: 4px;
-    width: 98%;
+    /* width: 98%;  */
   }
   .nav-links a {
     display: none;
@@ -182,7 +182,7 @@ button.menu-btn {
 }
 @media (max-width: 585px) {
   .nav {
-    width: 85%;
+    /* width: 85%; */
 
     font-size: var(--fs-xs);
 
@@ -197,10 +197,11 @@ button.menu-btn {
 
 }
 
+
 @media(max-width: 400px){
 
   .nav{
-    width: 85%;
+    /* width: 75%; */
     padding: 0.51rem 0;
 
     gap: 1px;
