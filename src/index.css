@@ -17,6 +17,10 @@ body{
     margin: 20px auto;
 }
 
+#root{
+    width: 90%;
+    margin: 30px auto;
+}
  .dark-theme {
     background-color: #0f172a;
     color: white;
