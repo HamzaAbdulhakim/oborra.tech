@@ -5,15 +5,13 @@
 
   right: 0;
 
-  visibility: hidden;
-
   height: 100vh;
 
   background: var(--background-color);
 
   color: var(--text-color);
 
-  display: flex;
+  display: none;
 
   flex-direction: column;
   gap: 30px;
