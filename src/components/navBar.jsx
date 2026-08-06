@@ -71,7 +71,7 @@ useEffect(() => {
     return (
         <nav className="nav">
             
-              <h2 id="logo"> Hamza </h2>
+              <h2 id="logo">  </h2>
                 
 
         <div className="nav-actions">    

@@ -6,7 +6,7 @@ display:grid;
 
 grid-template-columns:
 
-380px 1fr;
+repeat(auto-fit, minmax(380px, 1fr));
 
 gap: 60px;
 
