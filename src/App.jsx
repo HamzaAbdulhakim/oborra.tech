@@ -15,9 +15,8 @@ import Reveal2 from "./components/Reveal2";
 import NavBar from "./components/navBar";
 function App() {
   const [isLightMode, setIsLightMode] = useState(false);
-
   return (
-    <div className={isLightMode ? "light-theme" : "dark-theme"}>
+    <div className={isLightMode ? "light-theme": "dark-theme"}>
       <header>
         <NavBar isLightMode={isLightMode} setIsLightMode={setIsLightMode} />
       </header>

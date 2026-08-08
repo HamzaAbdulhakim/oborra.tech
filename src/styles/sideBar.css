@@ -1,9 +1,8 @@
-.sidebar {
-  position: fixed;
+ .sidebar {
 
   top: 0;
 
-  right: 0;
+  display: none;
 
   height: 100vh;
 
@@ -11,7 +10,6 @@
 
   color: var(--text-color);
 
-  display: none;
 
   flex-direction: column;
   gap: 30px;
@@ -23,6 +21,7 @@
   transition: transform 0.35s ease;
   z-index: 1100;
 }
+  
 
 .sidebar a {
   font-size: 20px;
@@ -54,7 +53,6 @@
   backdrop-filter: blur(8px);
   transform: translateY(0);
   visibility: visible;
-
   pointer-events: auto;
 }
 
