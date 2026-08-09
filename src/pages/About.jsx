@@ -18,7 +18,7 @@ return(
 <Reveal>
 <section
 id="about"
-className="about section">
+className="about-section">
 
 <SectionTitle
 

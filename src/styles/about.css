@@ -1,12 +1,17 @@
-
+.about-section{
+    width: 100%;
+    max-width: 1200px;
+}
 
 .about-container{
-
+width: min(1000px, 90%);
+margin-inline: auto;
 display:grid;
+
 
 grid-template-columns:
 
-repeat(auto-fit, minmax(380px, 1fr));
+repeat(auto-fit, minmax(min(380px, 90%), 1fr));
 
 gap: 60px;
 
@@ -20,7 +25,7 @@ display:grid;
 
 grid-template-columns:
 
-repeat(auto-fit,minmax(180px,1fr));
+repeat(auto-fit,minmax(min(180px, 90%),1fr));
 
 gap: 20px;
 
@@ -34,7 +39,7 @@ display:grid;
 
 grid-template-columns:
 
-repeat(auto-fit,minmax(350px,1fr));
+repeat(auto-fit,minmax(min(350px, 90%),1fr));
 
 gap:30px;
 

@@ -40,9 +40,9 @@ function Projects() {
     return (
 
         <div
-            className="projects"
+            className="projects-section"
         >
-            <div className="container">
+            <div className="projects-container">
 
                 <Reveal>
 

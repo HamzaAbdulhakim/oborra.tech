@@ -1,4 +1,7 @@
 .qualifications{
+width: 100%;
+max-width: 1200px;
+
 margin: var(--space-9);
 padding:
 
@@ -9,11 +12,12 @@ gap:
 var(--space-3);
 }
 .qualifications-grid{
+width: min(1000px, 90%);
 
 display:grid;
 
 grid-template-columns:
-repeat(auto-fit,minmax(440px,1fr));
+repeat(auto-fit,minmax(min(440px, 90%),1fr));
 
 gap:30px;
 

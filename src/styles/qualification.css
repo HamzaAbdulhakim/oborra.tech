@@ -1,11 +1,12 @@
 .qualifications-container {
+  width: min(1000px, 90%);
   background: var(--text);
 
   color: var(--background);
 
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 90%), 1fr));
 
   margin-top: var(--space-lg);
 

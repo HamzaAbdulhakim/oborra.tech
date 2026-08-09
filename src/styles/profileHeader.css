@@ -1,14 +1,14 @@
 .hero-section {
-
+  width: 100%;
+  max-width: 1200px;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-lg);
-
-  padding: var(--space-md);
 
   gap: var(--space-xs);
 }
 .hero-container {
-
+  width: min(90%, 1000px);
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,22 +81,22 @@
   font-size: 0.95rem;
 }
 
-.social-link{
+.social-link {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   gap: 20px;
 }
-@media(max-width: 786px){
-  .profile-name{
+@media (max-width: 786px) {
+  .profile-name {
     font-size: large;
   }
 
-  .profile-title{
+  .profile-title {
     font-size: medium;
   }
 
-  .profile-subtitle{
+  .profile-subtitle {
     font-size: small;
   }
 }
