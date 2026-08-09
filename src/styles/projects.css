@@ -8,7 +8,7 @@
 }
 
 .projects-container {
-  width: min(1000px, 80%);
+  width: min(1000px, 90%);
   margin-inline: auto;
   margin: 20px auto;
   display: flex;
