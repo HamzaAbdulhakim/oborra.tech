@@ -8,7 +8,7 @@
 }
 
 .projects-container {
-  width: min(1000px, 90%);
+  width: min(1000px, 80%);
   margin-inline: auto;
   margin: 20px auto;
   display: flex;
@@ -19,7 +19,7 @@
 .projects-grid {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(90%, 340px), 1fr));
 
   gap: var(--space-lg);
 }
@@ -27,7 +27,7 @@
 .featured-project {
   display: grid;
 
-  grid-template-columns: 1.2fr 1fr;
+  /* grid-template-columns: 1.2fr 1fr; */
 
   grid-template-columns: repeat(auto-fit, minmax(min(340px, 90%), 1fr));
 
@@ -61,9 +61,9 @@
 }
 
 .featured-image img {
-  width: 80%;
+  width: min(340px, 80%);
 
-  height: 90%;
+  /* height: 90%; */
 
   display: block;
 

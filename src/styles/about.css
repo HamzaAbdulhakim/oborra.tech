@@ -13,14 +13,13 @@ grid-template-columns:
 
 repeat(auto-fit, minmax(min(380px, 90%), 1fr));
 
-gap: 60px;
+gap: 20px;
 
 align-items:center;
 
 }
 
 .info-grid{
-
 display:grid;
 
 grid-template-columns:
@@ -34,7 +33,6 @@ margin: 40px 0;
 }
 
 .education-grid{
-
 display:grid;
 
 grid-template-columns:
