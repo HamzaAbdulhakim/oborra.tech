@@ -1,0 +1,319 @@
+/* =========================================================
+   PROJECT SECTION
+   Responsive version
+   ========================================================= */
+
+.projects-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 0;
+    margin-top: var(--space-xl);
+}
+
+.projects-container {
+    width: min(1000px, 90%);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+/* Project cards grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 340px), 1fr)
+    );
+    gap: var(--space-lg);
+}
+
+/* Featured project */
+.featured-project {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 340px), 1fr)
+    );
+    gap: 3rem;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    margin-bottom: var(--space-1xl);
+    transition: var(--transition-normal);
+}
+
+.featured-project:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Featured image */
+.featured-image {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.featured-image img {
+    width: min(340px, 80%);
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    transition: var(--transition-normal);
+}
+
+.featured-project:hover img {
+    transform: scale(1.05);
+}
+
+.featured-ribbon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 0.7rem 1.4rem;
+    background: gold;
+    color: #222;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: var(--fs-2xl);
+    z-index: 1;
+}
+
+/* Featured content */
+.featured-content {
+    width: 100%;
+    min-width: 0;
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.featured-year {
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.featured-content h2 {
+    font-size: var(--fs-2xl);
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.featured-content p {
+    line-height: 1.9;
+    color: var(--text-light);
+    overflow-wrap: break-word;
+}
+
+.featured-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+/* Featured buttons */
+.featured-buttons {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.featured-buttons a {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm);
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+/* Empty state */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+}
+
+.project-card {
+    min-width: 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.project-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .projects-container {
+        width: min(92%, 1000px);
+    }
+
+    .featured-project {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .featured-image {
+        padding-top: var(--space-lg);
+    }
+
+    .featured-image img {
+        width: min(420px, 85%);
+    }
+
+    .featured-content {
+        width: 100%;
+        padding: var(--space-lg);
+    }
+
+    .featured-buttons {
+        flex-direction: column;
+    }
+
+    .featured-buttons a {
+        width: 100%;
+    }
+
+    .featured-ribbon {
+        font-size: var(--fs-xl);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .projects-section {
+        padding: 1.5rem 0;
+    }
+
+    .projects-container {
+        width: min(92%, 100%);
+        margin: 15px auto;
+        gap: var(--space-lg);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .featured-project {
+        width: 100%;
+        grid-template-columns: 1fr;
+        border-radius: 22px;
+    }
+
+    .featured-image {
+        width: 100%;
+        padding-top: var(--space-md);
+    }
+
+    .featured-image img {
+        width: min(320px, 88%);
+        height: auto;
+    }
+
+    .featured-ribbon {
+        top: 15px;
+        left: 15px;
+        padding: 0.5rem 0.9rem;
+        font-size: var(--fs-lg);
+    }
+
+    .featured-content {
+        width: 100%;
+        padding: var(--space-md);
+        gap: var(--space-sm);
+    }
+
+    .featured-content h2 {
+        font-size: var(--fs-xl);
+    }
+
+    .featured-content p {
+        line-height: 1.7;
+    }
+
+    .featured-technologies {
+        gap: 0.5rem;
+    }
+
+    .featured-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .featured-buttons a {
+        width: 100%;
+        flex: none;
+    }
+
+    .empty-state {
+        padding: 3rem 1rem;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .projects-container {
+        width: 94%;
+    }
+
+    .featured-project {
+        border-radius: 18px;
+    }
+
+    .featured-content {
+        padding: 1rem;
+    }
+
+    .featured-image img {
+        width: 90%;
+    }
+
+    .featured-ribbon {
+        top: 10px;
+        left: 10px;
+        padding: 0.4rem 0.7rem;
+        font-size: var(--fs-md);
+    }
+
+    .featured-buttons a {
+        padding: 0.7rem;
+    }
+}
