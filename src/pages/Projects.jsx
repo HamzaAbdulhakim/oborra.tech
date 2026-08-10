@@ -13,7 +13,6 @@ import Reveal from "../components/Reveal";
 import EmptyState from "../components/EmptyState";
 
 import Stagger from "../components/Stagger";
-// import '../styles/projects.css'
 import "../styles/project-responsive.css";
 import FeaturedProject from "../components/FeaturedProject";
 function Projects() {
