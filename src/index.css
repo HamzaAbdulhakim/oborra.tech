@@ -10,6 +10,11 @@ html {
   width: 100%;
 
   overflow-x: hidden;
+
+   background: #0f172a;
+
+   color: white;
+
   scroll-behavior: smooth;
 }
 
@@ -55,7 +60,7 @@ ul {
 }
 
 img, svg, video {
-  max-width: 100%;
+  width: 100%;
   max-width: 100%;
   display: block;
 }

@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 1,
-    title: "Ummu Al-Qura Harari Islamic University",
+    title: "Dar Al-ulum Harari Islamic University",
     category: "React",
     year: "2026",
     featured: true,
@@ -27,7 +27,7 @@ const projects = [
 
   {
     id: 2,
-    title: "The Eastern Hararghe Greatest Scholars Council",
+    title: "The Harargee-GSA",
     category: "React",
     year: "2026",
     featured: true,
@@ -78,14 +78,14 @@ const projects = [
 
   {
     id: 4,
-    title: "Student Management System",
+    title: "Online Marketh Management",
     category: "Java",
     year: "2025",
 
     featured: false,
 
     shortDescription:
-      "Desktop application for managing students, attendance and academic records.",
+      "Effective and professional application for managing students, attendance and academic records.",
 
     fullDescription:
       "Built using Java and Object-Oriented Programming concepts to strengthen backend and software engineering knowledge.",

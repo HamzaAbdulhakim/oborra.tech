@@ -170,18 +170,17 @@
   width: 100%;
 }
 
-button.menu-btn {
+button.menu-btn{
   display: none;
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 600px) {
   .nav-links {
     display: none;
   }
 
   button.menu-btn {
-    display: block;
-    border-radius: 10%;
+    display: inline-flex;
   }
 }

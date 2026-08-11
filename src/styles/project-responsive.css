@@ -216,7 +216,7 @@
     }
 
     .projects-container {
-        width: min(92%, 100%);
+        width: min(95%, 100%);
         margin: 15px auto;
         gap: var(--space-lg);
     }

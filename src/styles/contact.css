@@ -207,17 +207,27 @@
   }
 }
 
+.contact-form,
+.contact-card {
+    min-width: 0;
+}
 
-button:focus-visible,
+@media (max-width: 600px) {
+    .contact {
+        padding: var(--space-xl) 0;
+    }
 
-a:focus-visible,
+    .contact-form {
+        padding: var(--space-md);
+    }
 
-input:focus-visible,
+    .contact-card {
+        align-items: flex-start;
+    }
 
-textarea:focus-visible{
-
-outline:3px solid var(--primary-color);
-
-outline-offset:4px;
-
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+    }
 }
