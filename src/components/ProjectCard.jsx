@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import '../styles/projectCard.css'
-import ImageLoader from "./ImageLoader";
+//import ImageLoader from "./ImageLoader";
 function ProjectCard({ project }) {
   return (
     <article className="project-card">
@@ -10,11 +10,10 @@ function ProjectCard({ project }) {
 
       <div className="project-image">
 
-        <ImageLoader
+        <img
           src={project.image}
           loading="lazy"
           alt={project.title}
-          className={"project-image"}
         />
 
         {project.featured && (

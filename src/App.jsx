@@ -13,9 +13,11 @@ import Stagger from "./components/Stagger";
 import Reveal2 from "./components/Reveal2";
 
 import NavBar from "./components/navBar";
-import Loader from "./components/Loader";
+//import Loader from "./components/Loader";
 function App() {
- /* const [isLightMode, setIsLightMode] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
+
+ /*
   const [loading, setLoading] = useState(true);
 
   useEffect(()=>{

@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import Reveal from "./Reveal";
 
+//import ImageLoader from "./ImageLoader";
 function FeaturedProject({ project }) {
   if (!project) return null;
 
@@ -11,10 +12,9 @@ function FeaturedProject({ project }) {
 
         <div className="featured-image">
 
-          <ImageLoader
+          <img
             src={project.image}
             alt={project.title}
-            className={"project-image"}
           />
 
           <span className="featured-ribbon">
