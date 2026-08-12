@@ -15,7 +15,7 @@ import Reveal2 from "./components/Reveal2";
 import NavBar from "./components/navBar";
 import Loader from "./components/Loader";
 function App() {
-  const [isLightMode, setIsLightMode] = useState(false);
+ /* const [isLightMode, setIsLightMode] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(()=>{
@@ -25,7 +25,7 @@ function App() {
 
     return ()=> clearTimeout(timer)
   }, [loading])
-
+*/
   return (
     <div className={isLightMode ? "light-theme": "dark-theme"}>
       <header>
@@ -36,7 +36,7 @@ function App() {
         <Stagger>
           <Reveal2>
             <section id="header">
-             {loading ? <Loader /> :  <Header />}
+             <Header />
             </section>
           </Reveal2>
         </Stagger>
@@ -44,7 +44,7 @@ function App() {
         <Stagger>
           <Reveal2>
             <section id="about">
-              {loading ? <Loader /> : <About />}
+              <About />
             </section>
           </Reveal2>
         </Stagger>
@@ -53,7 +53,7 @@ function App() {
         <Stagger>
           <Reveal2>
             <section id="projects">
-             {loading ? <Loader /> :  <Projects />}
+             <Projects />
             </section>
           </Reveal2>
         </Stagger>
