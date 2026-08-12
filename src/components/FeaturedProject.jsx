@@ -11,9 +11,10 @@ function FeaturedProject({ project }) {
 
         <div className="featured-image">
 
-          <img
+          <ImageLoader
             src={project.image}
             alt={project.title}
+            className={"project-image"}
           />
 
           <span className="featured-ribbon">

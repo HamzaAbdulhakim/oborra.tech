@@ -7,11 +7,13 @@
     width: 100%;
     max-width: 1200px;
     padding: 2rem 0;
+    height: auto;
     margin-top: var(--space-xl);
 }
 
 .projects-container {
     width: min(1000px, 90%);
+    height: auto;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -54,7 +56,7 @@
     position: relative;
     width: 100%;
     min-width: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .featured-image img {
@@ -217,6 +219,7 @@
 
     .projects-container {
         width: min(95%, 100%);
+        height: auto;
         margin: 15px auto;
         gap: var(--space-lg);
     }
@@ -291,7 +294,7 @@
 @media (max-width: 380px) {
 
     .projects-container {
-        width: 94%;
+        width: 100%;
     }
 
     .featured-project {

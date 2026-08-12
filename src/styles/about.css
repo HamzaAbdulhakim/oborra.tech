@@ -1,6 +1,7 @@
 .about-section{
     width: 100%;
     max-width: 1200px;
+    height: auto;
 }
 
 .about-container{
@@ -112,7 +113,18 @@ transform:translateY(-4px);
     gap: 10px;
 }
 
-@media (max-width: 600px) {
+/*
+@media (max-width: 495px) {
+
+    .about-section{
+        padding: 1rem 0;
+    }
+
+    .about-container{
+        width: min(92%, 100%);
+        margin: 15px auto;
+        grid-template-columns: 1fr;
+    }
     .about-buttons {
         flex-direction: column;
     }
@@ -121,3 +133,4 @@ transform:translateY(-4px);
         width: 100%;
     }
 }
+
