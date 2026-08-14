@@ -12,7 +12,11 @@
 
   padding: 0 4rem;
 
-  background: transparent;
+  background: rgba(0, 0, 0, .12);
+
+  color:  white;
+
+  backdrop-filter: blur(8px);
 
   position: fixed;
 
@@ -28,12 +32,17 @@
 }
 
 #logo::before {
+  
   content: "HA";
-  background: pink;
-  color: var(--card-bg);
-  font-size: 1.4rem;
+  width: min(100px, 100%);
+  height: auto;
+  margin: 12px auto;
+  background: none;
+  padding: 0 20px;
+  color: white;
+  backdrop-filter: blur(5px);
+  font-size: clamp(1rem, 0.5rem, 1.5rem);
   border-radius: 100%;
-  padding: 9px 5px;
   box-shadow: var(--shadow-md);
 }
 .nav-actions {
@@ -47,18 +56,6 @@
   z-index: 999;
 }
 
-/*.theme-btn {
-    background: transparent;
-    border: 2px solid #38BDF8;
-    color: inherit;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-*/
 .theme-btn:hover {
   transform: scale(1.1);
 }
@@ -80,9 +77,9 @@
 
   padding: 1rem 2rem;
 
-  background: var(--primary-color);
+  /* background: var(--backround-color); */
 
-  color: white;
+  /* color: var(--text-color); */
 
   border: none;
 
@@ -96,15 +93,34 @@
     background 0.35s ease;
 }
 
-#logo{
+#logo {
   position: absolute;
   top: 0;
   left: 0%;
 }
 
 .theme-btn {
+  background: none;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  width: min(42px, 100%);
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: clamp(1rem, 0.5rem, 1.5rem);
+  transition: all 0.3s ease;
+}
+
+.menu-btn {
   background: transparent;
-  color: inherit;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  width: min(42px, 100%);
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: clamp(1rem, 0.5rem, 1.5rem);
+  transition: all 0.3s ease;
 }
 .nav h2 {
   color: #38bdf8;
@@ -136,7 +152,6 @@
 
 .nav-links a {
   position: relative;
-
 
   transition: 0.35s;
 }
@@ -170,10 +185,9 @@
   width: 100%;
 }
 
-button.menu-btn{
+button.menu-btn {
   display: none;
 }
-
 
 @media (max-width: 600px) {
   .nav-links {

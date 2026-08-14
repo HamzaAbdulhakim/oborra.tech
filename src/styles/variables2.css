@@ -7,127 +7,126 @@
 ========================================= */
 
 :root {
-
-    /* ==========================
+  /* ==========================
        COLORS
     ========================== */
 
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --primary-light: #60a5fa;
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #60a5fa;
 
-    --secondary-color: #0f172a;
+  --secondary-color: #0f172a;
 
-    --accent-color: #f59e0b;
+  --accent-color: #f59e0b;
 
-    --success-color: #10b981;
-    --warning-color: #f59e0b;
-    --danger-color: #ef4444;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
 
-    /* ==========================
+  /* ==========================
        BACKGROUND
     ========================== */
 
-    --background-color: #f8fafc;
-    --section-bg: #ffffff;
-    --card-bg: #ffffff;
+  --background-color: #f8fafc;
+  --section-bg: #ffffff;
+  --card-bg: #ffffff;
 
-    /* ==========================
+  /* ==========================
        TEXT
     ========================== */
 
-    --text-color: #0f172a;
-    --text-light: #64748b;
+  --text-color: #0f172a;
+  --text-light: #64748b;
 
-    /* ==========================
+  /* ==========================
        BORDER
     ========================== */
 
-    --border-color: #e2e8f0;
+  --border-color: #e2e8f0;
 
-    /* ==========================
+  /* ==========================
        SHADOWS
     ========================== */
 
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, .05);
-    --shadow-md: 0 8px 20px rgba(0, 0, 0, .08);
-    --shadow-lg: 0 15px 40px rgba(0, 0, 0, .12);
-    --shadow-xl: 0 30px 60px rgba(0, 0, 0, .18);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 30px 60px rgba(0, 0, 0, 0.18);
 
-    /* ==========================
+  /* ==========================
        BORDER RADIUS
     ========================== */
 
-    --radius-sm: 8px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
-    --radius-xl: 32px;
-    --radius-round: 999px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-round: 999px;
 
-    /* ==========================
+  /* ==========================
        SPACING
     ========================== */
 
-    --space-xs: .5rem;
-    --space-sm: 1rem;
-    --space-md: 1.5rem;
-    --space-lg: 2rem;
-    --space-xl: 3rem;
-    --space-2xl: 5rem;
-    --space-3xl: 7rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+  --space-3xl: 7rem;
 
-    /* ==========================
+  /* ==========================
        LAYOUT
     ========================== */
 
-    --container-width: 1200px;
-    --header-height: 80px;
+  --container-width: 1200px;
+  --header-height: 80px;
 
-    /* ==========================
+  /* ==========================
        TRANSITIONS
     ========================== */
 
-    --transition-fast: .2s ease;
-    --transition-normal: .35s ease;
-    --transition-slow: .5s ease;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+  --transition-slow: 0.5s ease;
 
-    /* ==========================
+  /* ==========================
        Z-INDEX
     ========================== */
 
-    --z-navbar: 100;
-    --z-sidebar: 500;
-    --z-modal: 1000;
-    --z-tooltip: 2000;
+  --z-navbar: 100;
+  --z-sidebar: 500;
+  --z-modal: 1000;
+  --z-tooltip: 2000;
 
-    /* ==========================
+  /* ==========================
        TYPOGRAPHY
     ========================== */
 
-    --font-family: "Poppins", sans-serif;
+  --font-family: "Poppins", sans-serif;
 
-    --font-size-xs: .8rem;
-    --font-size-sm: .9rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.2rem;
-    --font-size-xl: 2rem;
-    --font-size-2xl: 3rem;
-    --font-size-3xl: 4rem;
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.9rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 2rem;
+  --font-size-2xl: 3rem;
+  --font-size-3xl: 4rem;
 
-    --font-weight-normal: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
-    /* ==========================
+  /* ==========================
        GRADIENTS
     ========================== */
 
-    --primary-gradient: linear-gradient(
-        135deg,
-        var(--primary-color),
-        var(--primary-light)
-    );
+  --primary-gradient: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-light)
+  );
 }
 
 /* =========================================
@@ -135,46 +134,53 @@
 ========================================= */
 
 [data-theme="dark"] {
+  --background-color: #0f172a;
+  --section-bg: #0f172a;
+  --card-bg: #1e293b;
 
-    --background-color: #020617;
-    --section-bg: #0f172a;
-    --card-bg: #1e293b;
+  --text-color: #f8fafc;
+  --text-light: #cbd5e1;
 
-    --text-color: #f8fafc;
-    --text-light: #cbd5e1;
+  --border-color: #334155;
 
-    --border-color: #334155;
+  --secondary-color: #f8fafc;
 
-    --secondary-color: #f8fafc;
-
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, .30);
-    --shadow-md: 0 10px 25px rgba(0, 0, 0, .40);
-    --shadow-lg: 0 20px 45px rgba(0, 0, 0, .50);
-    --shadow-xl: 0 35px 70px rgba(0, 0, 0, .60);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 35px 70px rgba(0, 0, 0, 0.6);
 }
 
+[data-theme="light"] {
+  --text-color: #0f172a;
+  --section-bg: #0f172a;
+  --card-bg: #1e293b;
+  --backround-color: #f8fafc;
+  --text-light: #cbd5e1;
+  --border-color: #334155;
+}
 /* =========================================
    GLOBAL UI
 ========================================= */
 
 ::selection {
-    background: var(--primary-color);
-    color: white;
+  background: var(--primary-color);
+  color: white;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background-color);
+  background: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: var(--radius-round);
+  background: var(--primary-color);
+  border-radius: var(--radius-round);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-dark);
+  background: var(--primary-dark);
 }

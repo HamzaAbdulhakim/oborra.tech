@@ -1,63 +1,54 @@
 import "../styles/sideBar.css";
 import { FaTimes } from "react-icons/fa";
+import { useState } from "react";
 import navigation from "../data/navigation";
+
+import { FaTablet } from "react-icons/fa";
 function Sidebar({ isOpen, setIsOpen, activeSection }) {
+  const [isHovered, setIsHovered] = useState(false);
+  return (
+    <>
+      {isOpen && <div className="overlay" onClick={() => setIsOpen(false)} />}
 
-    return (
+      {isOpen ? (
+        <aside className="sidebar open">
+          <div className="sidebar-btn">
+            <div>
+              <h5> Hamza Ab.</h5>
+            </div>
+            <div>
+              <button
+                className="close-btn"
+                aria-label="Close navigation menu"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <FaTimes />
+              </button>
+            </div>
+          </div>
 
-        <>
-        {
-isOpen &&
-
-<div
-
-className="overlay"
-
-onClick={()=>setIsOpen(false)}
-
-/>
-}
-
-           <aside 
-           className = { isOpen ? "sidebar open": "sidebar"}>
-
-                <button
-                    className="close-btn"
-                     aria-label="Close navigation menu"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    <FaTimes />
-                </button>
-                
-    
-
-
-
-    {navigation.map((item) => (
-
-            <a key={item.id}
-
+          <div className="side-links">
+            {navigation.map((item) => (
+              <a
+                key={item.id}
                 href={`#${item.id}`}
-
-                onClick={()=>setIsOpen(false)}
-
-                className={
-                    activeSection === item.id
-                        ? "active"
-                        : ""
-                }
-
-            >
-                {item.label}
-            </a>
-
-    ))}
-
-            </aside>
-
-        </>
-
-    );
+                className={activeSection === item.id ? "active" : ""}
+                onClick={()=>setIsOpen(!isOpen)}
+              >
+              <i onClick={()=>setIsHovered(true)}> {item.icon}</i> {  item.label}
+              </a>
+            ))}
+          </div>
+          <div className="tasks">
+            <i className="coffee">☕</i>
+            <i className="code">👨‍💻</i>
+            <i className="result"><FaTablet /></i>
+            </div>                  </aside>
+      ) : (
+        " "
+      )}
+    </>
+  );
 }
 
 export default Sidebar;
