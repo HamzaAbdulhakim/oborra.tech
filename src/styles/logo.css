@@ -1,48 +1,45 @@
 .callMe{
+    width: min(140px, 100%);
     position: fixed;
-    bottom: 10%;
-    right: 10%;
-    gap: 50px;
+    bottom: 0%;
+    right: 0%;
+    gap: 5px;
 
     align-items: center;
 
     z-index: 1000;
 }
 
-.callMe-btn button{
-    background: var(--primary-dark);
-    color: var(--color-bg);
+.callMe-btn{
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    background: none;
+    color: inherit;
     border-radius: 50%;
-    width: fit-content;
-    padding: 10px;
+    width: min(180px, 100%);
+    padding: none;
     margin-top: 20px;
-    font-size: xx-large;
+    font-size: clamp(4rem, 5rem, 1.5rem);
     transition: var(--transition-fast);
 }
 
-.callMe-btn button{
+.callMe-btn{
+    /* overflow:hidden; */
 
-    position:relative;
+    /* display:inline-flex; */
 
-    overflow:hidden;
+    /* align-items:center; */
 
-    display:inline-flex;
+    /* justify-content:center; */
 
-    align-items:center;
+    /* gap:.7rem; */
 
-    justify-content:center;
+    /* padding:1rem 2rem; */
 
-    gap:.7rem;
+    /* border:none; */
 
-    padding:1rem 2rem;
-
-    background:var(--primary-color);
-
-    color:white;
-
-    border:none;
-
-    border-radius:14px;
+    /* border-radius:14px; */
 
     cursor:pointer;
 
@@ -53,16 +50,14 @@
 
 }
 
-.callMe-btn button:hover{
+.callMe-btn:hover{
 
     transform:translateY(-4px);
 
-    box-shadow:
-        0 12px 30px rgba(37,99,235,.35);
-
 }
 
-.callMe-btn button::before{
+/*
+.callMe-btn::before{
 
     content:"";
 
@@ -97,10 +92,17 @@
     left: 100%;
 }
 
+*/
 .call-content{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
     display: flex;
+    margin-bottom: 5rem;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    font-size: clamp(1rem, 0.5rem, 0.05rem);
     border: 1px solid blue;
 }
 
