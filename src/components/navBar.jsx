@@ -44,7 +44,7 @@ function Navbar({ isLightMode, setIsLightMode }) {
   }, [isOpen]);
   return (
     <nav className="nav">
-      <h2 id="logo"> </h2>
+      <h2 id="logo"> Hamza Ab. </h2>
 
       <div className="nav-links">
         <ul>
@@ -54,7 +54,7 @@ function Navbar({ isLightMode, setIsLightMode }) {
                 href={`#${item.id}`}
                 className={activeSection === item.id ? "active" : ""}
               >
-                {item.label}
+               <i> {item.icon}</i> {item.label}
               </a>
             </li>
           ))}

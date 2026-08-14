@@ -36,12 +36,13 @@
   content: "HA";
   width: min(100px, 100%);
   height: auto;
-  margin: 12px auto;
-  background: none;
-  padding: 0 20px;
-  color: white;
+  background: var(--border-color);
+  padding: 5px;
+  margin:  0;
+  color: var(--text-light);
+  align-content: center;
   backdrop-filter: blur(5px);
-  font-size: clamp(1rem, 0.5rem, 1.5rem);
+  font-size: clamp(0.71rem, 0.5rem, 1.5rem);
   border-radius: 100%;
   box-shadow: var(--shadow-md);
 }
@@ -95,8 +96,8 @@
 
 #logo {
   position: absolute;
-  top: 0;
-  left: 0%;
+  top: 25%;
+  left: 5%;
 }
 
 .theme-btn {
@@ -123,19 +124,19 @@
   transition: all 0.3s ease;
 }
 .nav h2 {
-  color: #38bdf8;
+  color: inherit;
 
   cursor: pointer;
 
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 0.5rem, 1.5rem);
 }
 
 .nav ul {
   position: absolute;
 
-  top: 10%;
+  top: 25%;
 
-  right: 40%;
+  left: 25%;
 
   display: flex;
 
