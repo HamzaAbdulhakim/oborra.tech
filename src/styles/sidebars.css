@@ -1,0 +1,387 @@
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: min(320px, 85vw);
+    height: 100dvh;
+
+    display: none;
+    flex-direction: column;
+
+    background: var(--background-color);
+    color: var(--text-color);
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    transform: translateX(-100%);
+
+    pointer-events: none;
+
+    transition:
+        transform 0.35s ease,
+        visibility 0.35s ease;
+
+    visibility: hidden;
+
+    z-index: 1100;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   OPEN SIDEBAR
+   ========================================================= */
+
+.sidebar.open {
+    display: flex;
+
+    transform: translateX(0);
+
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADER / BUTTON AREA
+   ========================================================= */
+
+.sidebar-btn {
+    position: sticky;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    min-height: 64px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 0.75rem 1rem;
+
+    box-sizing: border-box;
+
+    background: var(--background-color);
+
+    color: var(--text-color);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.close-btn {
+    width: 42px;
+    height: 42px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--text-color);
+
+    font-size: 1.25rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.close-btn:hover {
+    background: var(--primary-color);
+
+    color: white;
+
+    transform: rotate(90deg);
+}
+
+.close-btn:focus-visible {
+    outline: 2px solid var(--primary-color);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+.side-links {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0.35rem;
+
+    padding: 1.5rem 1rem;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+}
+
+.side-links a {
+    display: block;
+
+    width: 100%;
+
+    padding: 0.8rem 1rem;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    color: var(--text-color);
+
+    font-size: clamp(1rem, 2vw, 1.15rem);
+
+    line-height: 1.4;
+
+    text-decoration: none;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.side-links a:hover {
+    background: var(--card-bg);
+
+    color: var(--primary-color);
+
+    transform: translateX(4px);
+}
+
+.side-links a.active {
+    background: var(--card-bg);
+
+    color: var(--primary-color);
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BOTTOM TASK BAR
+   ========================================================= */
+
+.tasks {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 0.75rem;
+
+    padding: 0.4rem 0.75rem;
+
+    box-sizing: border-box;
+
+    background: var(--card-bg);
+
+    color: var(--text-color);
+
+    border-top: 1px solid var(--border-color);
+
+    z-index: 3;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TASK ICONS
+   ========================================================= */
+
+.tasks i {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 32px;
+    min-height: 32px;
+
+    font-size: 1rem;
+
+    color: var(--text-color);
+}
+
+
+/* Optional labels */
+
+i.coffee::after {
+    content: " Coffee";
+}
+
+i.code::after {
+    content: " VS Code";
+}
+
+i.result::after {
+    content: " Creativity";
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.overlay {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100dvh;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    z-index: 1050;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .sidebar {
+        display: flex;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        width: min(300px, 88vw);
+    }
+
+    .side-links {
+        padding-inline: 0.75rem;
+    }
+
+    .side-links a {
+        padding: 0.75rem;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .sidebar {
+        width: 85vw;
+    }
+
+    .sidebar-btn {
+        min-height: 58px;
+
+        padding-inline: 0.75rem;
+    }
+
+    .side-links {
+        padding-top: 1rem;
+    }
+
+    .side-links a {
+        font-size: 0.95rem;
+    }
+
+    .tasks {
+        min-height: 44px;
+
+        padding-inline: 0.5rem;
+
+        gap: 0.4rem;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sidebar,
+    .side-links a,
+    .close-btn {
+        transition: none;
+    }
+
+    .close-btn:hover {
+        transform: none;
+    }
+
+    .side-links a:hover {
+        transform: none;
+    }
+
+}

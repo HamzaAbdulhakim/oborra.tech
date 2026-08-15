@@ -6,7 +6,7 @@ import { slideLeft, slideRight } from "./animations/variants";
 import Footer from "./components/Footer"
 import Contact from "./pages/contact";
 import About from "./pages/About";
-// import CallMe from "./pages/CallMe";
+import CallMe from "./pages/CallMe";
 import Header from "./pages/Header";
 import Projects from "./pages/Projects";
 import Stagger from "./components/Stagger";
@@ -77,7 +77,7 @@ function App() {
           </Reveal2>
         </Stagger>
 
-        {/* <CallMe /> */}
+        <CallMe />
       </main>
       <footer>
         <Stagger>

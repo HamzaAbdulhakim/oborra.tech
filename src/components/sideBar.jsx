@@ -1,4 +1,4 @@
-import "../styles/sideBar.css";
+import "../styles/sidebars.css";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import navigation from "../data/navigation";

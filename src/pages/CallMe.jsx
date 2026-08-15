@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { FiPhone, FiMail } from "react-icons/fi";
 import { FaTelegram } from "react-icons/fa";
-import "../styles/logo.css"
+import "../styles/callMe.css"
 function CallMe(){
     const [isViewed, setIsViewed] = useState(false)
     return(
