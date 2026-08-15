@@ -5,7 +5,6 @@ import navigation from "../data/navigation";
 
 import { FaTablet } from "react-icons/fa";
 function Sidebar({ isOpen, setIsOpen, activeSection }) {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       {isOpen && <div className="overlay" onClick={() => setIsOpen(false)} />}
@@ -20,7 +19,7 @@ function Sidebar({ isOpen, setIsOpen, activeSection }) {
               <button
                 className="close-btn"
                 aria-label="Close navigation menu"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
               >
                 <FaTimes />
               </button>
@@ -35,7 +34,7 @@ function Sidebar({ isOpen, setIsOpen, activeSection }) {
                 className={activeSection === item.id ? "active" : ""}
                 onClick={()=>setIsOpen(!isOpen)}
               >
-              <i onClick={()=>setIsHovered(true)}> {item.icon}</i> {  item.label}
+              <i > {item.icon}</i> {  item.label}
               </a>
             ))}
           </div>
