@@ -19,7 +19,7 @@ function Education(){
                     year={item.year} />
                 ))
             }
-            <div><Button>Read More</Button></div>
+            <div> <a href="#education">Read more!</a></div>
         </section>
     )
 }

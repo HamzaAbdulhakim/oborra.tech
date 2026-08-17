@@ -111,7 +111,6 @@
 
 .featured-content p {
     line-height: 1.9;
-    color: var(--text-light);
     overflow-wrap: break-word;
 }
 

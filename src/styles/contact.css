@@ -82,7 +82,7 @@
 }
 
 .contact-content p {
-  color: var(--text-light);
+  color: inherit;
 
   font-size: var(--fs-md);
 }
@@ -112,11 +112,7 @@
 
   text-decoration: none;
 
-  background: var(--card-bg);
-
   border: 1px solid var(--border-color);
-
-  color: var(--text-color);
 
   transition: var(--transition-normal);
 }

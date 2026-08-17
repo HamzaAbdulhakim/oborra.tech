@@ -10,8 +10,6 @@
 
     padding-block: clamp(2rem, 5vw, 4rem);
     padding-inline: clamp(1rem, 4vw, 2rem);
-
-    box-sizing: border-box;
 }
 
 
@@ -32,7 +30,6 @@
 
     gap: var(--space-md);
 
-    box-sizing: border-box;
 }
 
 
@@ -158,6 +155,7 @@
 .profile-subtitle {
     width: min(100%, 650px);
 
+    text-align: center;
     margin: 0;
 
     color: inherit;
@@ -190,7 +188,7 @@
 
     max-width: 100%;
 
-    color: var(--text-color);
+    color: inherit;
 
     font-size: clamp(0.85rem, 1.5vw, 0.95rem);
 

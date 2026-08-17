@@ -1,7 +1,5 @@
 .footer {
   padding: 5rem 0 2rem;
-  background: var(--text-color);
-  color: var(--background-color);
   border-top: 1px solid var(--primary-color);
   margin-top: var(--space-md);
 }
@@ -15,7 +13,6 @@
 .footer-brand p {
   margin-top: 1rem;
   line-height: 1.8;
-  color: var(--text-light);
 }
 
 .footer-links ul {
@@ -29,7 +26,6 @@
 
 .footer-links a {
   text-decoration: none;
-  color: var(--text-light);
   transition: 0.3s;
 }
 
@@ -71,7 +67,6 @@
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
   text-align: center;
-  color: var(--text-light);
 }
 
 @media (max-width: 900px) {

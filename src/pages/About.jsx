@@ -113,7 +113,7 @@ Download CV
 
 </div>
 </Reveal>
-<div className="education-grid">
+<div className="education-grid" id="education">
 
 <IslamicCard/>
 
