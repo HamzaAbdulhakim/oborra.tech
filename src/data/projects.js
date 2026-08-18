@@ -22,7 +22,7 @@ const projects = [
     github: "#",
     demo: "#",
 
-    image: "#",
+    image: "src\assets\HIU.png",
   },
 
   {
@@ -73,7 +73,7 @@ const projects = [
     github: "#",
     demo: "http://localhost:5173/",
 
-    image: "src/assets/myPortFolioHeader.png",
+    image: "src/assets/OborraPortf.png",
   },
 
   {
