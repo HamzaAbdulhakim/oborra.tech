@@ -29,7 +29,7 @@ subtitle="Get to know me better"
 />
 <Reveal >
 <div className="about-container">
-<div className="about-image">
+<span className="about-image">
 <img
 
 src={profile}
@@ -38,11 +38,11 @@ alt={about.name}
 
 />
 
-</div>
+</span>
 
-<div className="about-content">
+<div className="card">
 <Reveal >
-<h3>
+<h3 className="about-intro">
 
 {about.intro}
 

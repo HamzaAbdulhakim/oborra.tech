@@ -72,7 +72,7 @@ function Projects() {
 
                 {filteredProjects.length > 0 ? (
 <Stagger>
-  <div className="projects-grid">
+  <div className="projects-grid card">
 
     {filteredProjects.map(project => (
 

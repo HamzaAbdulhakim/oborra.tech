@@ -37,7 +37,7 @@ function App() {
       <main>
         <Stagger>
           <Reveal2>
-            <section id="header">
+            <section id="header" >
              <Header />
             </section>
           </Reveal2>
@@ -45,7 +45,7 @@ function App() {
 
         <Stagger>
           <Reveal2>
-            <section id="about">
+            <section id="about" >
               <About />
             </section>
           </Reveal2>

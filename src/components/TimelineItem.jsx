@@ -19,9 +19,9 @@ function TimelineItem({
 
             <div className="timeline-content">
 
-                <h3>{title}</h3>
+                <h3 className="title">{title}</h3>
 
-                <h4>{subtitle}</h4>
+                <h4 className="subtitle">{subtitle}</h4>
 
                 <span>{year}</span>
 

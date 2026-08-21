@@ -68,9 +68,9 @@
 
   align-items: center;
 
-  background: var(--primary-color);
+  background: var(--bg-primary);
 
-  color: white;
+  color: var(--text-secondary);
 
   font-size: var(--fs-xl);
 }
@@ -82,7 +82,7 @@
 }
 
 .contact-content p {
-  color: inherit;
+  color: var(--text-muted);
 
   font-size: var(--fs-md);
 }

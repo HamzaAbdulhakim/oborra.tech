@@ -10,7 +10,7 @@ function Biography() {
 
     <div className="biography">
 
-      <p>
+      <p className={expanded ? "short-bio": " full-bio"}>
 
         {expanded ? about.fullBio : about.shortBio}
 

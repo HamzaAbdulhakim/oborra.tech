@@ -35,6 +35,8 @@
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     box-shadow: var(--shadow-card);
+
+    
     overflow: hidden;
     z-index: 1;
 }

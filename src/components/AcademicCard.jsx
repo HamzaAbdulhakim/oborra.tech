@@ -4,7 +4,7 @@ function AcademicCard(){
 
 return(
 
-<div className="glass-card">
+<div className="card">
 
 <h3>
 
