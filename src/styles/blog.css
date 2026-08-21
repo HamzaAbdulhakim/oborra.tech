@@ -60,6 +60,23 @@ transform:translateY(-8px);
 
 }
 
+.education-card{
+    background: transparent;
+    color: inherit;
+    border-top: 1px solid gold;
+    margin: 12px auto;
+}
+
+.education-btn{
+    background: var(--primary-color);
+    max-width: fit-content;
+    padding: 0.7rem 1rem;
+    border-radius: 25%;
+}
+
+.education-btn:hover{
+    transform: scale(1);
+}
 
 @media (max-width: 600px) {
     .qualifications-grid {

@@ -102,7 +102,7 @@
 
 .theme-btn {
   background: none;
-  color: var(--text-color);
+  color: var(--text-primary);
   border: 1px solid var(--primary-color);
   width: min(42px, 100%);
   height: auto;

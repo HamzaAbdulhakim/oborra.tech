@@ -22,7 +22,7 @@ const projects = [
     github: "#",
     demo: "#",
 
-    image: "src\assets\HIU.png",
+    image: "src/assets/HIU.png",
   },
 
   {
