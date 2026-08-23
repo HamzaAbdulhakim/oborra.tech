@@ -67,7 +67,7 @@ body {
 
 
 .dark-theme::before{
-  content: "";
+  content: " ";
   position: fixed;
   inset: 0;
   background: radial-gradient(ellipse 80% 50% at 20% 40% , rgba(99, 102, 241, 0.08), transparent, ),
@@ -120,7 +120,7 @@ z-index: 1;
 }
 
 .card::before{
-content: "";
+content: " ";
 position: absolute;
 top: 0;
 left: 20%;
@@ -184,9 +184,9 @@ opacity: 0.5;
   font-weight: 600;
   color: var(--accent) !important;
   background: none !important;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 0 !important;
   transition: opacity var(--transition-fast);
 }
 
