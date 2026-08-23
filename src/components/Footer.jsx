@@ -17,11 +17,11 @@ function Footer() {
 
         <div className="footer-top">
 
-          <div className="footer-brand">
+          <div className="footer-brand card">
 
-            <h2>Hamza Abdulhakim</h2>
+            <h2 className="title">Hamza Abdulhakim</h2>
 
-            <p>
+            <p className="subtitle">
               Software Engineering Student at Haramaya University.
               Passionate about building modern web applications
               and solving real-world problems through technology.
@@ -29,9 +29,9 @@ function Footer() {
 
           </div>
 
-          <div className="footer-links">
+          <div className="footer-links card">
 
-            <h3>Quick Links</h3>
+            <h3 className="title">Quick Links</h3>
 
             <ul>
 
@@ -39,7 +39,7 @@ function Footer() {
 
                 <li key={link.id}>
 
-                  <a href={link.href}>
+                  <a href={link.href} className="subtitle">
                     {link.title}
                   </a>
 
@@ -51,18 +51,18 @@ function Footer() {
 
           </div>
 
-          <div className="footer-social">
+          <div className="footer-social card">
 
             <h3>Connect</h3>
 
-            <div className="footer-icons">
+            <div className="footer-icons ">
 
               <a
                 href="https://github.com/HamzaAbdulhakim"
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaGithub />
+                <i className="card-icon"> <FaGithub /></i>
               </a>
 
               <a
@@ -70,7 +70,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaLinkedin />
+               <i className="card-icon"> <FaLinkedin /></i>
               </a>
 
               <a
@@ -78,7 +78,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FaTelegramPlane />
+               <i className="card-icon"> <FaTelegramPlane /></i>
               </a>
 
             </div>

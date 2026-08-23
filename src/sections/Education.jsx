@@ -9,7 +9,7 @@ function Education() {
       <SectionTitle title="Education" subtitle="Here is my accadamic detail" />
 
       {education.map((item) => (
-        <div key={item.id} className="education-card">
+        <div key={item.id} className="education-card card">
           <TimelineItem
             title={item.school}
             subtitle={item.degree}

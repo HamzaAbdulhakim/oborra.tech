@@ -29,15 +29,15 @@ function FeaturedProject({ project }) {
             {project.year}
           </span>
 
-          <h2>
+          <h2 className="title">
             {project.title}
           </h2>
 
-          <p>
+          <p className="subtitle">
             {project.fullDescription}
           </p>
 
-          <div className="featured-technologies">
+          <div className="featured-technologies title">
 
             {project.technologies.map((tech) => (
 

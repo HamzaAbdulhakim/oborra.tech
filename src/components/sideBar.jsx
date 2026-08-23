@@ -10,8 +10,8 @@ function Sidebar({ isOpen, setIsOpen, activeSection }) {
       {isOpen && <div className="overlay" onClick={() => setIsOpen(false)} />}
 
       {isOpen ? (
-        <aside className="sidebar open">
-          <div className="sidebar-btn">
+        <aside className="sidebar open card">
+          <div className="sidebar-btn ">
             <div>
               <h5> Hamza Ab.</h5>
             </div>

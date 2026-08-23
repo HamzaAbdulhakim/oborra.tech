@@ -11,9 +11,9 @@ function TimelineItem({
 
         <div className="timeline-item">
 
-            <div className="timeline-dot">
+            <div className="">
 
-                {icon}
+                <i className="card-icon">{icon}</i>
 
             </div>
 

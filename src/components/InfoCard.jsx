@@ -18,19 +18,19 @@ scale:1.03
 
 >
 
-<div>
+<div className="card-icon">
 
 {item.icon}
 
 </div>
 
-<h4>
+<h4 className="title">
 
 {item.title}
 
 </h4>
 
-<p>
+<p className="subtitle">
 
 {item.value}
 

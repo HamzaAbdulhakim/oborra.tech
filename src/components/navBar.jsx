@@ -61,9 +61,9 @@ function Navbar({ isLightMode, setIsLightMode }) {
         </ul>
       </div>
 
-      <div className="nav-actions">
+      <div className=" nav-actions">
         <button
-          className="theme-btn"
+          className="theme-btn card-action"
           aria-label="Toggle light and dark theme"
           onClick={() => setIsLightMode(!isLightMode)}
         >

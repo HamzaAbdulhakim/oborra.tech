@@ -30,7 +30,7 @@ function ProjectCard({ project }) {
 
         <div className="project-header">
 
-          <h3>{project.title}</h3>
+          <h3 className="title">{project.title}</h3>
 
           <span className="project-year">
             {project.year}
@@ -38,7 +38,7 @@ function ProjectCard({ project }) {
 
         </div>
 
-        <p className="project-description">
+        <p className="project-description subtitle">
           {project.shortDescription}
         </p>
 
@@ -50,7 +50,7 @@ function ProjectCard({ project }) {
 
             <span
               key={tech}
-              className="tech-badge"
+              className="tech-badge title"
             >
               {tech}
             </span>

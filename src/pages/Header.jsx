@@ -13,7 +13,7 @@ function Header() {
     return (
         <Reveal>
             <section className="hero-section">
-                <div className="hero-container">
+                <div className="hero-container cards">
 
                     {/* Profile image */}
                     <div className="profile-image-wrapper">
@@ -25,7 +25,7 @@ function Header() {
                             />
                         </Reveal>
 
-                        <span className="status-badge">
+                        <span className="card-badge status-badge">
                             🟢 Available for Opportunities
                         </span>
                     </div>
@@ -65,7 +65,7 @@ function Header() {
                             rel="noopener noreferrer"
                             aria-label="Facebook"
                         >
-                            <FaFacebook />
+                            <i  className="card-icon" ><FaFacebook /></i>
                         </a>
 
                         <a
@@ -74,7 +74,7 @@ function Header() {
                             rel="noopener noreferrer"
                             aria-label="Telegram"
                         >
-                            <FaTelegram />
+                            <i  className="card-icon" ><FaTelegram /></i>
                         </a>
 
                         <a
@@ -83,7 +83,7 @@ function Header() {
                             rel="noopener noreferrer"
                             aria-label="TikTok"
                         >
-                            <FaTiktok />
+                            <i  className="card-icon" ><FaTiktok /></i>
                         </a>
 
                     </div>

@@ -39,14 +39,16 @@ function Contact() {
                         <div className="contact-info">
 
                             {contactInfo.map((item) => (
-
+                                <span className="cards">
                                 <ContactCard
 
                                     key={item.id}
 
                                     contact={item}
-
+                                    
                                 />
+
+                                </span>
 
                             ))}
 

@@ -12,120 +12,61 @@ import profile from "../assets/hamzaProfile.png";
 
 import "../styles/about.css";
 
-function About(){
+function About() {
+  return (
+    <Reveal>
+      <section id="about" className="about-section">
+        <SectionTitle title="About Me" subtitle="Get to know me better" />
+        <Reveal>
+          <div className="about-container">
+            <div className="about-image">
+              <img src={profile} loading="lazy" alt={about.name} />
+              <div className="philosophy">
+                <Reveal variant={slideRight}>
+                  <h4 className="title">My Philosophy</h4>
+                </Reveal>
+                <p className="subtitle">
+                  I believe learning never ends. Every project is an opportunity
+                  to improve, solve real-world problems, and build software that
+                  benefits people.
+                </p>
+              </div>
+              <div className="about-buttons">
+                <Button className="title ">Download CV</Button>
+                <a href="#projects">
+                  <Button className="title">View Projects</Button>
+                </a>
+              </div>{" "}
+            </div>
 
-return(
-<Reveal>
-<section
-id="about"
-className="about-section">
+            <div className="card">
+                <h2 className="title">My Biography</h2>
+              <Reveal>
+                <h3 className="about-intro">{about.intro}</h3>
+              </Reveal>
+              <Reveal>
+                {" "}
+                <Biography />{" "}
+              </Reveal>
+              <Reveal>
+                <div className="info-grid">
+                  {info.map((item) => (
+                    <InfoCard key={item.id} item={item} />
+                  ))}
+                </div>
+              </Reveal>
+              
+            </div>
+          </div>
+        </Reveal>
+        <span className="education-grid" id="education">
+          <IslamicCard />
 
-<SectionTitle
-
-title="About Me"
-
-subtitle="Get to know me better"
-
-/>
-<Reveal >
-<div className="about-container">
-<span className="about-image">
-<img
-
-src={profile}
-loading="lazy"
-alt={about.name}
-
-/>
-
-</span>
-
-<div className="card">
-<Reveal >
-<h3 className="about-intro">
-
-{about.intro}
-
-</h3>
-</Reveal>
-<Reveal> <Biography /> </Reveal>
-<Reveal>
-<div className="info-grid">
-
-{
-
-info.map(item=>
-
-<InfoCard
-
-key={item.id}
-
-item={item}
-
-/>
-
-)
-
-}
-
-</div>
-</Reveal>
-
-<Reveal>
-<div className="philosophy">
-<Reveal variant={slideRight}>
-<h4>
-
-My Philosophy
-
-</h4>
-</Reveal>
-
-<Reveal variant={slideRight}>
-<p>
-
-I believe learning never ends.
-Every project is an opportunity to improve,
-solve real-world problems,
-and build software that benefits people.
-
-</p>
-</Reveal>
-</div>
-</Reveal>
-<div className="about-buttons">
-
-<Button>
-
-Download CV
-
-</Button>
-
-<a href="#projects">
-
-<Button>View Projects</Button>
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-</Reveal>
-<div className="education-grid" id="education">
-
-<IslamicCard/>
-
-<AcademicCard/>
-
-</div>
-
-</section>
-</Reveal>
-
-)
-
+          <AcademicCard />
+        </span>
+      </section>
+    </Reveal>
+  );
 }
 
 export default About;

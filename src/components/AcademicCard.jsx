@@ -6,9 +6,9 @@ return(
 
 <div className="card">
 
-<h3>
+<h3 className="title">
 
-🎓 Academic Journey
+<i className="card-icon">🎓</i> Academic Journey
 
 </h3>
 
@@ -21,22 +21,22 @@ academic.map(item=>
 key={item.id}
 
 className="timeline-item"
-
+className = "card"
 >
 
-<h4>
+<h4 className="title">
 
 {item.level}
 
 </h4>
 
-<h5>
+<h5 className="subtitle">
 
 {item.place}
 
 </h5>
 
-<p>
+<p className="subtitle">
 
 {item.description}
 

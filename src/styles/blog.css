@@ -60,12 +60,6 @@ transform:translateY(-8px);
 
 }
 
-.education-card{
-    background: transparent;
-    color: inherit;
-    border-top: 1px solid gold;
-    margin: 12px auto;
-}
 
 .education-btn{
     background: var(--primary-color);

@@ -8,13 +8,13 @@ function ContactCard({ contact }) {
       target="_blank"
       rel="noreferrer"
     >
-      <div className="contact-icon">
+      <div className="card-icon">
         <Icon />
       </div>
 
       <div className="contact-content">
-        <h3>{contact.title}</h3>
-        <p>{contact.value}</p>
+        <h3 className="title">{contact.title}</h3>
+        <p className="subtitle">{contact.value}</p>
       </div>
     </a>
   );

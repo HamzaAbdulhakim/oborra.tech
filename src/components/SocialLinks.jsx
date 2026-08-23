@@ -6,14 +6,14 @@ import {
 
 function SocialLinks() {
   return (
-    <div className="social-links">
+    <div className="social-links card">
 
       <a
         href="https://github.com/HamzaAbdulhakim"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaGithub />
+        <i className="card-icon"> <FaGithub /></i>
       </a>
 
       <a
@@ -21,7 +21,7 @@ function SocialLinks() {
         target="_blank"
          rel="noopener noreferrer"
       >
-        <FaLinkedin />
+       <i className="card-icon"> <FaLinkedin /></i>
       </a>
 
       <a
@@ -29,7 +29,7 @@ function SocialLinks() {
         target="_blank"
          rel="noopener noreferrer"
       >
-        <FaTelegram />
+        <i className="card-icon"> <FaTelegram /></i>
       </a>
 
     </div>
