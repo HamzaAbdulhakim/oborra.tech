@@ -38,7 +38,6 @@ body {
 }
 
 .dark-theme {
-  background-image: url(./assets/dark.png);
   --bg-primary: #0a0a0f;
   --bg-secondary: #12121a;
   --bg-tertiary: #1a1a25;
@@ -77,7 +76,6 @@ body {
 
 
 .light-theme {
-  background-image: url('./assets/light.png');
 
   --bg-primary: #fafafa;
   --bg-secondary: #ffffff;
