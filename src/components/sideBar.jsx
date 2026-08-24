@@ -13,11 +13,11 @@ function Sidebar({ isOpen, setIsOpen, activeSection }) {
         <aside className="sidebar open card">
           <div className="sidebar-btn ">
             <div>
-              <h5> Hamza Ab.</h5>
+              <h5 className="title"> Hamza Ab.</h5>
             </div>
             <div>
               <button
-                className="close-btn"
+                className="card-action close-btn"
                 aria-label="Close navigation menu"
                 onClick={() => setIsOpen(false)}
               >

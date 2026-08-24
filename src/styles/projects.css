@@ -39,11 +39,12 @@ border-radius:30px;
 
 overflow:hidden;
 
-border:1px solid var(--primary-color);
 
 margin-bottom:var(--space-1xl);
 
 transition:var(--transition-normal);
+
+box-shadow: var(--shadow-card);
 
 }
 

@@ -43,6 +43,7 @@ function ContactForm() {
         >
 
             <input
+            className="card"
                 type="text"
                 name="name"
                 placeholder="Your Name"
@@ -52,6 +53,7 @@ function ContactForm() {
             />
 
             <input
+            className="card"
                 type="email"
                 name="email"
                 placeholder="Your Email"
@@ -61,6 +63,7 @@ function ContactForm() {
             />
 
             <input
+            className="card"
                 type="text"
                 name="subject"
                 placeholder="Subject"
@@ -70,6 +73,7 @@ function ContactForm() {
             />
 
             <textarea
+            className="card"
                 rows="7"
                 name="message"
                 placeholder="Write your message..."
@@ -80,7 +84,7 @@ function ContactForm() {
 
             <button
                 type="submit"
-                className="send-btn"
+                className="send-btn card"
             >
                 Send Message
             </button>

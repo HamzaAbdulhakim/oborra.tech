@@ -23,7 +23,7 @@ function FeaturedProject({ project }) {
 
         </div>
 
-        <div className="featured-content">
+        <div className="featured-content card">
 
           <span className="featured-year">
             {project.year}

@@ -9,7 +9,7 @@ import Button from "../components/Button";
 import info from "../data/info";
 import { slideRight } from "../animations/variants";
 import profile from "../assets/hamzaProfile.png";
-import CallToAction from "../components/CallToAction";
+import CallToAction from "../components/CallToAction"
 import "../styles/about.css";
 
 function About() {
@@ -31,7 +31,9 @@ function About() {
                   benefits people.
                 </p>
               </div>
-              <CallToAction />
+              <CallToAction 
+              action1={"View Project"}
+              action2={"Download Resume"} />
 
             </div>
 

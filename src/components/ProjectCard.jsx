@@ -4,7 +4,7 @@ import '../styles/projectCard.css'
 //import ImageLoader from "./ImageLoader";
 function ProjectCard({ project }) {
   return (
-    <article className="project-card">
+    <article className="project-card card">
 
       {/* Project Image */}
 
