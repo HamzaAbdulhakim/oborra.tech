@@ -9,7 +9,7 @@ import Button from "../components/Button";
 import info from "../data/info";
 import { slideRight } from "../animations/variants";
 import profile from "../assets/hamzaProfile.png";
-
+import CallToAction from "../components/CallToAction";
 import "../styles/about.css";
 
 function About() {
@@ -31,12 +31,8 @@ function About() {
                   benefits people.
                 </p>
               </div>
-              <div className="about-buttons">
-                <Button className="title ">Download CV</Button>
-                <a href="#projects">
-                  <Button className="title">View Projects</Button>
-                </a>
-              </div>{" "}
+              <CallToAction />
+
             </div>
 
             <div className="card">
