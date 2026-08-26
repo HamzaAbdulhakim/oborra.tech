@@ -9,6 +9,7 @@ import Button from "../components/Button";
 import info from "../data/info";
 import { slideRight } from "../animations/variants";
 import profile from "../assets/hamzaProfile.png";
+import HireMe from "../components/HireButton";
 import CallToAction from "../components/CallToAction"
 import "../styles/about.css";
 
@@ -62,6 +63,8 @@ function About() {
 
           <AcademicCard />
         </span>
+
+        <HireMe />
       </section>
     </Reveal>
   );

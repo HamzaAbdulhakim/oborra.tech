@@ -6,7 +6,7 @@
 
   transition: .4s;
 
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--border-medium);
 
   display: flex;
 
@@ -197,17 +197,24 @@ color:blue;
 
 .demo-btn{
 
-background:blue;
-
-color:white;
+background: transparent;
+color: #6366f1;
+border: 2px solid rgba(99, 102, 241, 0.25);
+box-shadow: inset 0 0 0 0 rgba(99, 102, 241, 0.08);
+background: transparent;
+color: #6366f1;
+border: 2px solid rgba(99, 102, 241, 0.25);
+box-shadow: inset 0 0 0 0 rgba(99, 102, 241, 0.08);
 
 }
 
-.project-buttons a:hover{
-
-transform:translateY(-4px);
-
+.demo-btn:hover, .github-btn:hover{
+background: rgba(99, 102, 241, 0.08);
+border-color: rgba(99, 102, 241, 0.5);
+box-shadow: inset 0 0 20px rgba(99, 102, 241, 0.08);
+transform: translateY(-2px) ;
 }
+
 
 @media(max-width:768px){
 
