@@ -2,7 +2,7 @@
   width: 100%;
 
   max-width: 1200px;
-  height: 40px;
+  height: 50px;
 
   display: flex;
 
@@ -12,9 +12,9 @@
 
   padding: 0 4rem;
 
-  background: rgba(0, 0, 0, .12);
+  background: var( --bg-glass);
 
-  color:  white;
+  color: var(--text-primary);
 
   backdrop-filter: blur(8px);
 
@@ -26,30 +26,13 @@
 
   gap: 40px;
 
-  backdrop-filter: blur(12px);
-
   z-index: 1000;
 }
 
-#logo::before {
-  
-  content: "HA";
-  width: min(100px, 100%);
-  height: auto;
-  background: var(--border-color);
-  padding: 5px;
-  margin:  0;
-  color: var(--text-light);
-  align-content: center;
-  backdrop-filter: blur(5px);
-  font-size: clamp(0.71rem, 0.5rem, 1.5rem);
-  border-radius: 100%;
-  box-shadow: var(--shadow-md);
-}
 .nav-actions {
   position: absolute;
-  top: 0%;
-  right: 10%;
+top: 0%;
+right: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,10 +61,6 @@
 
   padding: 1rem 2rem;
 
-  /* background: var(--backround-color); */
-
-  /* color: var(--text-color); */
-
   border: none;
 
   border-radius: 14px;
@@ -96,13 +75,35 @@
 
 #logo {
   position: absolute;
-  top: 25%;
-  left: 5%;
+  top: auto;
+  right: 35%;
+  visibility: hidden;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#logo::before {
+  visibility: hidden;
+  content: "HA";
+  width: min(100px, 100%);
+  height: auto;
+  color: white;
+  padding: 4px 10px;
+  align-content: center;
+  font-size: clamp(0.71rem, 0.5rem, 1.5rem);
+  border-radius: 100%;
+  box-shadow: var(--shadow-md);
 }
 
 .theme-btn {
   background: none;
-  color: var(--text-primary);
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
   width: min(42px, 100%);
   height: auto;
@@ -159,7 +160,7 @@
 }
 
 .nav-links a.active {
-  color: var(--text-primary);
+  
 
   font-weight: 600;
 }

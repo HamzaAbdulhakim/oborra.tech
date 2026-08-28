@@ -1,0 +1,84 @@
+
+    /* ============================================
+       NAVIGATION
+       ============================================ */
+    .hero-nav {
+      width: 100%;
+      max-width: 1200px;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem clamp(1rem, 4vw, 4rem);
+      margin: 0 auto;
+    }
+    .hero-nav__logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #818cf8, #c084fc);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-nav__links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .hero-nav__links a {
+      color: #a1a1aa;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color var(--transition-fast);
+
+
+      position: relative;
+    }
+    .hero-nav__links a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #818cf8, #c084fc);
+      transition: width var(--transition-base);
+      border-radius: 2px;
+    }
+    .hero-nav__links a:hover {
+      color: #f4f4f5;
+    }
+    .hero-nav__links a:hover::after {
+      width: 100%;
+    }
+    .hero-nav__cta {
+      padding: 0.6rem 1.25rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(129,140,248,0.3);
+      background: rgba(129,140,248,0.08);
+      color: #818cf8;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-base);
+      font-family: inherit;
+    }
+    .hero-nav__cta:hover {
+      background: rgba(129,140,248,0.15);
+      border-color: rgba(129,140,248,0.5);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(129,140,248,0.15);
+    }
+
+
+@media(max-width: 600px){
+
+  .hero-nav__links{
+
+    display: none;
+  }
+}

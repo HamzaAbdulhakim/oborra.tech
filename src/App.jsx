@@ -5,14 +5,14 @@ import Reveal from "./components/Reveal";
 import { slideLeft, slideRight } from "./animations/variants";
 import Footer from "./components/Footer"
 import Contact from "./pages/contact";
-import About from "./pages/About";
 import CallMe from "./pages/CallMe";
-import Header from "./pages/Header";
+// import Header from "./pages/Header";
 import Projects from "./pages/Projects";
 import Stagger from "./components/Stagger";
 import Reveal2 from "./components/Reveal2";
-
-import NavBar from "./components/navBar";
+import About from "./pages/About"
+import NavBars from "./components/NavBars";
+import Home from "./pages/Home";
 //import Loader from "./components/Loader";
 function App() {
   const [isLightMode, setIsLightMode] = useState(false);
@@ -31,14 +31,14 @@ function App() {
   return (
     <div className={isLightMode ? "light-theme": "dark-theme"}>
       <header>
-        <NavBar isLightMode={isLightMode} setIsLightMode={setIsLightMode} />
+        <NavBars isLightMode={isLightMode} setIsLightMode={setIsLightMode} />
       </header>
 
       <main>
         <Stagger>
           <Reveal2>
             <section id="header" >
-             <Header />
+             <Home />
             </section>
           </Reveal2>
         </Stagger>
@@ -46,7 +46,7 @@ function App() {
         <Stagger>
           <Reveal2>
             <section id="about" >
-              <About />
+               <About />
             </section>
           </Reveal2>
         </Stagger>

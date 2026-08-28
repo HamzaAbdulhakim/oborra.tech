@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import navigation from "../data/navigation";
-import "../styles/navbar.css";
-import Button from "./Button";
 import { FaBars } from "react-icons/fa";
 import { FiMoon, FiSun } from "react-icons/fi";
 import Sidebar from "./sideBar";
-function Navbar({ isLightMode, setIsLightMode }) {
+import "../styles/navbar.css";
+function NavBars({ isLightMode, setIsLightMode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const [activeSection, setActiveSection] = useState("home");
@@ -54,7 +53,7 @@ function Navbar({ isLightMode, setIsLightMode }) {
                 href={`#${item.id}`}
                 className={activeSection === item.id ? "active" : ""}
               >
-               <i> {item.icon}</i> {item.label}
+               <i className=""> {item.icon}</i> {item.label}
               </a>
             </li>
           ))}
@@ -63,7 +62,7 @@ function Navbar({ isLightMode, setIsLightMode }) {
 
       <div className=" nav-actions">
         <button
-          className="theme-btn card-action"
+          className="theme-btn card-action "
           aria-label="Toggle light and dark theme"
           onClick={() => setIsLightMode(!isLightMode)}
         >
@@ -87,4 +86,4 @@ function Navbar({ isLightMode, setIsLightMode }) {
     </nav>
   );
 }
-export default Navbar;
+export default NavBars;
