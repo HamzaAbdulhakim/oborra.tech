@@ -13,6 +13,7 @@ import Reveal2 from "./components/Reveal2";
 import About from "./pages/About"
 import NavBars from "./components/NavBars";
 import Home from "./pages/Home";
+import Navigation from './components/Navigation'; 
 //import Loader from "./components/Loader";
 function App() {
   const [isLightMode, setIsLightMode] = useState(false);
@@ -31,7 +32,10 @@ function App() {
   return (
     <div className={isLightMode ? "light-theme": "dark-theme"}>
       <header>
-        <NavBars isLightMode={isLightMode} setIsLightMode={setIsLightMode} />
+        <Navigation
+        isLightMode={isLightMode}
+        setIsLightMode={setIsLightMode} />
+        {/* <NavBars isLightMode={isLightMode} setIsLightMode={setIsLightMode} /> */}
       </header>
 
       <main>

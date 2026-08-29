@@ -12,6 +12,7 @@
   gap: 4rem;
   align-items: center;
   min-height: calc(100vh - 80px);
+  padding-top: var(--space-2xl);
 }
 .hero-content {
   animation: fadeInUp 1s ease-out 0.2s both;
