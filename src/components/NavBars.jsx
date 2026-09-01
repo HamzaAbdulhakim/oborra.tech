@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import navigation from "../data/navigation";
 import { FaBars } from "react-icons/fa";
-import { FiMoon, FiSun } from "react-icons/fi";
 import Sidebar from "./sideBar";
 import "../styles/navbar.css";
+import Logo from "../assets/MyLogo.jpg";
 function NavBars({ isLightMode, setIsLightMode }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,7 +43,15 @@ function NavBars({ isLightMode, setIsLightMode }) {
   }, [isOpen]);
   return (
     <nav className="nav">
-      <h2 id="logo"> Hamza Ab. </h2>
+
+    
+       {/* Logo */}
+ <a href="#" className="navigation-logo">
+   <div className="nav-logo__img">
+     <img src={Logo} alt="Logo" />
+   </div>
+   <span className="nav-logo__text">Hamza Ab.</span>
+ </a>
 
       <div className="nav-links">
         <ul>
@@ -60,9 +68,12 @@ function NavBars({ isLightMode, setIsLightMode }) {
         </ul>
       </div>
 
+ {/* CTA */}
+
+ 
       <div className=" nav-actions">
         <button
-          className="theme-btn card-action "
+          className="theme-btn "
           aria-label="Toggle light and dark theme"
           onClick={() => setIsLightMode(!isLightMode)}
         >
@@ -78,11 +89,15 @@ function NavBars({ isLightMode, setIsLightMode }) {
           <FaBars />
         </button>
       </div>
-      <Sidebar
+      
+        
+       <Sidebar
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         activeSection={activeSection}
       />
+
+      
     </nav>
   );
 }

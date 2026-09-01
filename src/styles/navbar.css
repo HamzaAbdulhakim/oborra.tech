@@ -69,38 +69,7 @@ right: 10%;
 
   transition:
     transform 0.35s ease,
-    box-shadow 0.35s ease,
-    background 0.35s ease;
 }
-
-#logo {
-  position: absolute;
-  top: auto;
-  right: 35%;
-  visibility: hidden;
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  background: linear-gradient(135deg, #818cf8, #c084fc);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#logo::before {
-  visibility: hidden;
-  content: "HA";
-  width: min(100px, 100%);
-  height: auto;
-  color: white;
-  padding: 4px 10px;
-  align-content: center;
-  font-size: clamp(0.71rem, 0.5rem, 1.5rem);
-  border-radius: 100%;
-  box-shadow: var(--shadow-md);
-}
-
 .theme-btn {
   background: none;
   color: var(--primary-color);
@@ -110,6 +79,16 @@ right: 10%;
   border-radius: 50%;
   cursor: pointer;
   font-size: clamp(1rem, 0.5rem, 1.5rem);
+
+   background: transparent;
+ color: var(--text-primary);
+ border: 1px solid var(--primary-color);
+ width: min(42px, 100%);
+ height: auto;
+ border-radius: 50%;
+ cursor: pointer;
+ font-size: clamp(1rem, 0.5rem, 1.5rem);
+ transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -197,6 +176,9 @@ button.menu-btn {
     display: none;
   }
 
+  .nav-logo__text{
+    display: none;
+  }
   button.menu-btn {
     display: inline-flex;
   }

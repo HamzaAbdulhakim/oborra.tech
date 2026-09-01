@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import "../styles/navigation.css";
 import navigation from '../data/navigation';
+import { FiSun, FiMoon } from 'react-icons/fi';
+import Logo from "../assets/MyLogo.jpg";
 function Navigation({isLightMode, setIsLightMode}) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +20,7 @@ function Navigation({isLightMode, setIsLightMode}) {
         {/* Logo */}
         <a href="#" className="navigation-logo">
           <div className="nav-logo__img">
-            <img src="src/assets/MyLogo.jpg" alt="Logo" />
+            <img src= {Logo} alt="Logo" />
           </div>
           <span className="nav-logo__text">Hamza Ab.</span>
         </a>
@@ -42,7 +44,7 @@ function Navigation({isLightMode, setIsLightMode}) {
         {/* CTA */}
         <div className="navigation-action">
           <button className="navigation-cta" 
-          onClick={()=>setIsLightMode(!isLightMode)} >Change theme</button>
+          onClick={()=>setIsLightMode(!isLightMode)} >{isLightMode ? <FiSun />: <FiMoon />}</button>
         </div>
 
         {/* Hamburger */}
@@ -61,7 +63,7 @@ function Navigation({isLightMode, setIsLightMode}) {
 
       {/* Mobile Drawer */}
       <div className="navigation-drawer" aria-hidden={!menuOpen}>
-        <div className="nav-drawer__backdrop" onClick={() => setMenuOpen(false)}></div>
+        <div className="backdrop nav-drawer__backdrop" onClick={() => setMenuOpen(false)}></div>
         <div className="nav-drawer__panel">
           {navigation.map(item=>(
             <a key={item.id} href={item.id}
@@ -71,7 +73,8 @@ function Navigation({isLightMode, setIsLightMode}) {
           {/* <a href="#about" className="nav-drawer__link" onClick={() => setMenuOpen(false)}>About</a> */}
           {/* <a href="#services" className="nav-drawer__link" onClick={() => setMenuOpen(false)}>Services</a> */}
           {/* <a href="#contact" className="nav-drawer__link" onClick={() => setMenuOpen(false)}>Contact</a> */}
-          <a href="#contact" className="navigation-cta nav-drawer__cta">Let's Talk</a>
+          <a href="#contact" className="navigation-cta nav-drawer__cta"
+          onClick={()=>setMenuOpen(false)}>Let's Talk</a>
         </div>
       </div>
     </nav>

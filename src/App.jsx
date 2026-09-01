@@ -33,8 +33,8 @@ function App() {
     <div className={isLightMode ? "light-theme": "dark-theme"}>
       <header>
         <Navigation
-        isLightMode={isLightMode}
-        setIsLightMode={setIsLightMode} />
+         isLightMode={isLightMode}
+         setIsLightMode={setIsLightMode} />
         {/* <NavBars isLightMode={isLightMode} setIsLightMode={setIsLightMode} /> */}
       </header>
 
