@@ -138,7 +138,7 @@
 }
 
 
-/*
+
 .hero-visual {
   position: relative;
   display: flex;
@@ -158,7 +158,7 @@
    border-radius: var(--radius-xl);
    padding: 2rem;
    width: 100%;
-   max-width: 420px;
+   max-width: 320px;
    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
    overflow: hidden;
  }
@@ -178,23 +178,33 @@
   margin-bottom: 1.5rem;
 }
 
-.glass-card__dots {
+.glass-card-dot {
   display: flex;
-  gap: 6px;
+  gap: 6px; 
 }
-.glass-card__dot {
+.glass-carddot {
   width: 10px; height: 10px;
   border-radius: 50%;
 }
-.glass-card__dot--red { background: #ef4444; }
-.glass-card__dot--yellow { background: #eab308; }
-.glass-card__dot--green { background: #22c55e; }
+.glass-carddot--red { background: #ef4444; }
+.glass-carddot--yellow { background: #eab308; }
+.glass-carddot--green { background: #22c55e; }
 
 .glass-card__body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
+
+.glass-card__body img{
+  width: 100%;
+}
+ @keyframes shimmer {
+   0%, 100% { opacity: 1; }
+   50% { opacity: 0.5; }
+ }
+
+
 .glass-card__line {
   height: 12px;
   border-radius: 6px;
@@ -202,10 +212,7 @@
   animation: shimmer 3s ease-in-out infinite;
 }
 
-.glass-card__line--short { width: 60%; }
-.glass-card__line--medium { width: 85%; }
-.glass-card__line--long { width: 100%; }
-.glass-card__line--highlight {
+.glass-cardline--highlight {
   background: linear-gradient(90deg, rgba(99,102,241,0.2), rgba(139,92,246,0.2));
   height: 40px;
   margin: 0.5rem 0;
@@ -218,9 +225,5 @@
   gap: 0.5rem;
 }
 
- @keyframes shimmer {
-   0%, 100% { opacity: 1; }
-   50% { opacity: 0.5; }
- }
 
- */
+ 

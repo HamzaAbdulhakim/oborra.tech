@@ -30,7 +30,7 @@ function Navigation({isLightMode, setIsLightMode}) {
           {navigation.map(item =>(
             <li key={item.id}
             className="nav-links__item">
-              <a href={item.id}>{item.label}</a>
+              <a href={`#${item.id}`}>{item.label}</a>
             </li>
           ))}
           {/* <li className="nav-linksitem nav-linksitem--active">
@@ -63,10 +63,10 @@ function Navigation({isLightMode, setIsLightMode}) {
 
       {/* Mobile Drawer */}
       <div className="navigation-drawer" aria-hidden={!menuOpen}>
-        <div className="backdrop nav-drawer__backdrop" onClick={() => setMenuOpen(false)}></div>
+        <div className="nav-backdrop nav-drawer__backdrop" onClick={() => setMenuOpen(false)}></div>
         <div className="nav-drawer__panel">
           {navigation.map(item=>(
-            <a key={item.id} href={item.id}
+            <a key={item.id} href= {`#${item.id}`}
             className="nav-drawer__link" onClick={() => setMenuOpen(false)}>{item.label}</a>
           ))}
           {/* <a href="#work" className="nav-drawer__link" onClick={() => setMenuOpen(false)}>Work</a> */}

@@ -103,11 +103,13 @@
 
     box-sizing: border-box;
 
-    background: var(--card-bg);
+    background: var(--bg-glass);
 
-    color: var(--text-color);
+    backdrop-filter: blur(15px);
 
-    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+
+    border: 1px solid var(--border-medium);
 
     border-radius: var(--radius-md);
 

@@ -1,4 +1,6 @@
+import Logo from "../../../assets/MyLogo.jpg";
 import "./heroMain.css";
+
 function HeroMain() {
   return (
     <>
@@ -28,11 +30,8 @@ function HeroMain() {
             </a>
           </div>
         </div>
-{/* 
+
         <div className="hero-visual">
-            <div className="hero-image"> 
-          <img src="../src/assets/hamzaProfile.png" alt="" />
-          </div>
 
           <div className="hero-glass-card">
             <div className="glass-card__header">
@@ -48,32 +47,20 @@ function HeroMain() {
                   marginLeft: "auto",
                 }}
               >
-              Peronal Portfolio
+              
               </span>
 
             </div>
 
             <div className="glass-card__body">
-              <div className="glass-cardline glass-cardline--short"></div>
-              <div className="glass-cardline glass-cardline--medium"></div>
-              <div className="glass-cardline glass-cardline--long"></div>
-              <div className="glass-cardline glass-cardline--highlight">
-                <svg
-                  width={14}
-                  height={14}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#818cf8"
-                  strokeWidth={2}
-                ></svg>
-                <span>Build successfully</span>
+               <img src= {Logo} alt="" />
+              <div className="glass-card__line glass-cardline--highlight">         
               </div>
             </div>
         </div>
           
         </div>
-        */}  
-        
+                
       </div>
       
     </>
