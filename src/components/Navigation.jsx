@@ -54,6 +54,7 @@ function Navigation({isLightMode, setIsLightMode}) {
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
         >
+          
           <span className="nav-hamburger__line"></span>
           <span className="nav-hamburger__line"></span>
           <span className="nav-hamburger__line"></span>

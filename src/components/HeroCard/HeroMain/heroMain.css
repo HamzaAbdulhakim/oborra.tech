@@ -121,8 +121,8 @@
 
 .hero-btn--secondary {
   background: rgba(255, 255, 255, 0.05);
-  color: #e4e4e7;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #6366f1;
+  border: 1px solid rgba(99, 102, 241, 0.25);
   backdrop-filter: blur(10px);
 }
 .hero-btn--secondary:hover {

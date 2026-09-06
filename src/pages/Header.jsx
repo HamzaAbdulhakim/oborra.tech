@@ -1,5 +1,5 @@
 import Reveal from "../components/Reveal";
-import profile from "../assets/hamzaProfile.png";
+import profile from "../assets/MyLogo.jpg";
 import "../styles/profileHeader.css";
 
 import { slideRight } from "../animations/variants";

@@ -4,8 +4,8 @@ function IslamicCard(){
 
 return(
 
-<div className="cards">
-
+<div >
+<div className="card">
 <h3 className="title">
 
 <i className="card-icon">📖</i> Islamic Learning
@@ -40,6 +40,7 @@ See More
 
 </button>
 
+</div>
 </div>
 
 )

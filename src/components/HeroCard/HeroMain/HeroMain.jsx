@@ -1,11 +1,11 @@
-import Logo from "../../../assets/MyLogo.jpg";
+import Logo from "../../../assets/hamzaProfile.png";
 import "./heroMain.css";
 
 function HeroMain() {
   return (
     <>
-      <div className="hero-main card">
-        <div className="hero-content">
+      <div className="hero-main">
+        <div className="hero-content ">
           <div className="hero-badge">
             <span className="hero-badge__dot"></span>
             Full Stack Engineer
@@ -55,7 +55,7 @@ function HeroMain() {
             <div className="glass-card__body">
                <img src= {Logo} alt="" />
               <div className="glass-card__line glass-cardline--highlight">         
-              </div>
+                <h2>Software Engineer</h2>              </div>
             </div>
         </div>
           

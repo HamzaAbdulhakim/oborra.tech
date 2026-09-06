@@ -9,7 +9,6 @@ import Button from "../components/Button";
 import info from "../data/info";
 import { slideRight } from "../animations/variants";
 import profile from "../assets/hamzaProfile.png";
-import CallToAction from "../components/CallToAction"
 import "../styles/about.css";
 
 function About() {
@@ -31,14 +30,20 @@ function About() {
                   benefits people.
                 </p>
               </div>
-              <CallToAction 
-              action1={"View Project"}
-              action2={"Download Resume"} />
 
+              <div className="hero-btn ">
+                <a href="#projects" className="hero-btn hero-btn--primary">
+                 <span className="card-actions">View Projects</span>
+                </a>
+                <a  className="hero-btn hero-btn--secondary">
+                  <span className="card-actions" >Download Resume</span>
+                </a>
+              </div>
+          
             </div>
 
             <div className="card">
-                <h2 className="title">My Biography</h2>
+              <h2 className="title">My Biography</h2>
               <Reveal>
                 <h3 className="about-intro">{about.intro}</h3>
               </Reveal>
@@ -53,7 +58,6 @@ function About() {
                   ))}
                 </div>
               </Reveal>
-              
             </div>
           </div>
         </Reveal>

@@ -3,8 +3,8 @@ import HeroNav from "./HeroNav/HeroNav";
 function HeroDetails(){
 
     return(
-        <div>
-        <HeroMain />
+        <div >
+        <div className="card"><HeroMain /></div>
         <HeroNav />
         </div>
     )
