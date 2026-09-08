@@ -13,11 +13,6 @@ function Home(){
             </Reveal2>
         </Stagger>
 
-        <Stagger>
-            <Reveal2>
-                <Header></Header>
-            </Reveal2>
-        </Stagger>
 
         </>
     )

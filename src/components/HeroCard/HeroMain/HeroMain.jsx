@@ -53,7 +53,10 @@ function HeroMain() {
             </div>
 
             <div className="glass-card__body">
-               <img src= {Logo} alt="" />
+             
+               <img 
+               className="Hero-card__image"
+               src= {Logo} alt="" /> 
               <div className="glass-card__line glass-cardline--highlight">         
                 <h2>Software Engineer</h2>              </div>
             </div>
