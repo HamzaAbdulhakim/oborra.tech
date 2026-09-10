@@ -8,7 +8,7 @@ function FeaturedProject({ project }) {
 
   return (
     <Reveal>
-      <section className="featured-project card">
+      <section className="featured-project">
 
         <div className="featured-image ">
 
