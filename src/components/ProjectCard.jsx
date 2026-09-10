@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import "../styles/projectCard.css";
+import setIsLightMode from "../App";
 //import ImageLoader from "./ImageLoader";
 function ProjectCard({ project }) {
   return (
@@ -10,7 +11,7 @@ function ProjectCard({ project }) {
       <div className="project-image">
 
         <img
-  src={ project.DarkMode_image}
+  src={  project.LightMode_image}
   loading="lazy"
   alt={project.title}
 />

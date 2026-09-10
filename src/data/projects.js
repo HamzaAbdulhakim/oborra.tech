@@ -1,6 +1,7 @@
 import HIU_logo from "../assets/HIU.png";
 import lightMode_PortFolio_logo from "../assets/lightMode_oborraPortfolio.png";
 import darkMode_portfolio_logo from "../assets/DarkMode_oborraPortfolio.png";
+
 const projects = [
   {
     id: 1,
