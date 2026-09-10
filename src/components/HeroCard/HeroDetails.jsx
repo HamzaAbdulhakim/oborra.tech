@@ -7,6 +7,8 @@ function HeroDetails(){
     return(
         <div >
         <div className="card"><HeroMain /></div>
+
+        <div className="card" id="hero">
         <HeroNav />
         <EditorialHeroCard
         imageUrl={image}
@@ -16,6 +18,7 @@ function HeroDetails(){
         ctaText={"Let's Talk"}
         quote={"Technology is the only powerfull weapon that you can use to execute impossibility"}
         body={"I'm a full-stack developer crafting pixel-perfect interfaces and robust backends for startups and established brands alike."} />
+       </div>
         </div>
     )
 }

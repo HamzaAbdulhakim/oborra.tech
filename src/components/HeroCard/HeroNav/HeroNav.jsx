@@ -7,7 +7,7 @@ function HeroNav(){
             <div className="hero-nav__logo">Hamza Abdulhakim</div>
 
             <ul className="hero-nav__links">
-                <li className=""> <a href="#header">Hero</a></li>
+                <li className=""> <a href="#hero">Hero</a></li>
                 <li className=""> <a href="#projects">Work</a></li>
                 <li className=""> <a href="#service">Service</a></li>
                 <li className="" > <a href="#skill">Skills</a></li>

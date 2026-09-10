@@ -8,9 +8,9 @@ function FeaturedProject({ project }) {
 
   return (
     <Reveal>
-      <section className="featured-project">
+      <section className="featured-project card">
 
-        <div className="featured-image">
+        <div className="featured-image ">
 
           <img
             src={project.image}

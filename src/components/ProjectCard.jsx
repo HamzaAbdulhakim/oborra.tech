@@ -1,41 +1,30 @@
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import '../styles/projectCard.css'
+import "../styles/projectCard.css";
 //import ImageLoader from "./ImageLoader";
 function ProjectCard({ project }) {
   return (
-    <article className="project-card">
-
+    <article className="project-card card">
       {/* Project Image */}
 
       <div className="project-image">
 
         <img
-          src={project.image}
-          loading="lazy"
-          alt={project.title}
-        />
+  src={ project.DarkMode_image}
+  loading="lazy"
+  alt={project.title}
+/>
 
-        {project.featured && (
-          <span className="featured-badge">
-            Featured
-          </span>
-        )}
-
+        {project.featured && <span className="featured-badge">Featured</span>}
       </div>
 
       {/* Project Content */}
 
       <div className="project-content">
-
         <div className="project-header">
-
           <h3 className="title">{project.title}</h3>
 
-          <span className="project-year">
-            {project.year}
-          </span>
-
+          <span className="project-year">{project.year}</span>
         </div>
 
         <p className="project-description subtitle">
@@ -45,24 +34,16 @@ function ProjectCard({ project }) {
         {/* Technologies */}
 
         <div className="project-technologies">
-
           {project.technologies.map((tech) => (
-
-            <span
-              key={tech}
-              className="tech-badge title"
-            >
+            <span key={tech} className="tech-badge title">
               {tech}
             </span>
-
           ))}
-
         </div>
 
         {/* Buttons */}
 
         <div className="project-buttons">
-
           <a
             href={project.github}
             target="_blank"
@@ -72,7 +53,6 @@ function ProjectCard({ project }) {
             <FaGithub />
 
             <span>GitHub</span>
-
           </a>
 
           <a
@@ -84,13 +64,9 @@ function ProjectCard({ project }) {
             <FiExternalLink />
 
             <span>Live Demo</span>
-
           </a>
-
         </div>
-
       </div>
-
     </article>
   );
 }

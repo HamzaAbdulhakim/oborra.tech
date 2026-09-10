@@ -18,10 +18,10 @@ function Education() {
           />
         </div>
       ))}
-      <div className="education-btn">
-        {" "}
-        <a href="#education">Read more!</a>
-      </div>
+      {/* <div className="education-btn"> */}
+        {/* {" "} */}
+        {/* <a href="#education">Read more!</a> */}
+      {/* </div> */}
     </section>
   );
 }

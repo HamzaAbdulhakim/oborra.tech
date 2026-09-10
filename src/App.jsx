@@ -59,7 +59,7 @@ function App() {
         <Stagger>
           <Reveal2>
             <section id="projects">
-             <Projects />
+              <Projects />
             </section>
           </Reveal2>
         </Stagger>

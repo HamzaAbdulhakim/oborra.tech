@@ -1,3 +1,6 @@
+import HIU_logo from "../assets/HIU.png";
+import lightMode_PortFolio_logo from "../assets/lightMode_oborraPortfolio.png";
+import darkMode_portfolio_logo from "../assets/DarkMode_oborraPortfolio.png";
 const projects = [
   {
     id: 1,
@@ -22,7 +25,8 @@ const projects = [
     github: "#",
     demo: "#",
 
-    image: "src/assets/HIU.png",
+    LightMode_image:  HIU_logo,
+    DarkMode_image: HIU_logo,
   },
 
   {
@@ -47,7 +51,7 @@ const projects = [
     github: "#",
     demo: "#",
 
-    image: "#",
+    LightMode_image: "#",
   },
 
   {
@@ -73,7 +77,8 @@ const projects = [
     github: "#",
     demo: "http://localhost:5173/",
 
-    image: "src/assets/OborraPortf.png",
+    LightMode_image: lightMode_PortFolio_logo,
+    DarkMode_image: darkMode_portfolio_logo,
   },
 
   {
@@ -98,7 +103,7 @@ const projects = [
     github: "#",
     demo: "#",
 
-    image: "/images/projects/student.jpg",
+    LightMode_image: "/images/projects/student.jpg",
   },
 ];
 
