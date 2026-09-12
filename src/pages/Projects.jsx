@@ -13,7 +13,7 @@ import Reveal from "../components/Reveal";
 import EmptyState from "../components/EmptyState";
 
 import Stagger from "../components/Stagger";
-import "../styles/project-responsive.css";
+import "../styles/premiumProject.css";
 import FeaturedProject from "../components/FeaturedProject";
 function Projects() {
     const featuredProject =
